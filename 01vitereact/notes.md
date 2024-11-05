@@ -1,4 +1,4 @@
-# Notes for Understanding the basics of React
+# Understanding the basics of React
 
 ## "react" is the core library. It comes with some other attachments
 
