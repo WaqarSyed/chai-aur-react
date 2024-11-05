@@ -8,4 +8,4 @@
 
 ### "react-native" is an attachment with the core library to work on "ANDROID APPS"
 
-- So, the core is library's knowledge is needed with react-native.
+- So, the core is library's knowledge is needed with react-native. Core library knowledge is helpful.
