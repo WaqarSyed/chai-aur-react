@@ -4,8 +4,8 @@
 
 ### "react-dom" is an attachment with the core library to work on the 'WEB APPS'
 
-- So, the core is library's knowledge is needed with react-dom
+- So, the core is library's knowledge is needed with react-dom.
 
 ### "react-native" is an attachment with the core library to work on "ANDROID APPS"
 
-- So, the core is library's knowledge is needed with react-native
+- So, the core is library's knowledge is needed with react-native.
