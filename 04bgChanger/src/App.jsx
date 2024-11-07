@@ -13,46 +13,60 @@ function App() {
         <div className="flex flex-wrap gap-3 justify-center shadow-lg rounded-xl bg-white px-3 py-2">
           <button
             className="bg-red-700 px-3 py-2 text-white rounded-xl outline-none"
-            onClick={() => setColor("red")}
-          >
-            Red
-          </button>
-          <button
-            className="bg-green-600 px-3 py-2 text-white rounded-xl outline-none"
-            onClick={() => setColor("green")}
-          >
-            Green
-          </button>
-          <button
-            className="bg-blue-700 px-3 py-2 text-white rounded-xl outline-none"
-            onClick={() => setColor("blue")}
+            onClick={() => setColor("#b91c1c")}
           >
             {" "}
-            Blue{" "}
+            Red{" "}
           </button>
+
           <button
-            onClick={() => setColor("silver")}
-            className="bg-slate-300 px-3 py-2 text-white rounded-xl outline-none"
+            className="bg-gray-700 px-3 py-2 text-white rounded-xl outline-none"
+            onClick={() => setColor("#374151")}
           >
-            silver
+            {" "}
+            Gray{" "}
           </button>
           <button
-            onClick={() => setColor("maroon")}
             className="bg-red-900 px-3 py-2 text-white rounded-xl outline-none"
+            onClick={() => setColor("#7f1d1d")}
           >
-            Maroon
+            {" "}
+            Maroon{" "}
           </button>
           <button
-            onClick={() => setColor("purple")}
-            className="bg-purple-700 px-3 py-2 text-white rounded-xl outline-none"
+            className="bg-orange-700 border-l-orange-700 px-3 py-2 text-white rounded-xl outline-none"
+            onClick={() => setColor("#c2410c")}
           >
-            purple
+            {" "}
+            Orange{" "}
           </button>
           <button
-            onClick={() => setColor("gray")}
-            className="bg-gray-500 px-3 py-2 text-white rounded-xl outline-none"
+            className="bg-indigo-700 border-l-indigo-700 px-3 py-2 text-white rounded-xl outline-none"
+            onClick={() => setColor("#4338ca")}
           >
-            gray
+            {" "}
+            Indigo{" "}
+          </button>
+          <button
+            className="bg-green-700 border-l-green-700 px-3 py-2 text-white rounded-xl outline-none"
+            onClick={() => setColor("#15803d")}
+          >
+            {" "}
+            Green{" "}
+          </button>
+          <button
+            className="bg-lime-700 px-3 py-2 text-white rounded-xl outline-none"
+            onClick={() => setColor("#4d7c0f")}
+          >
+            {" "}
+            Lime{" "}
+          </button>
+          <button
+            className="bg-cyan-500 px-3 py-2 text-white rounded-xl outline-none"
+            onClick={() => setColor("#06b6d4")}
+          >
+            {" "}
+            Cyan{" "}
           </button>
         </div>
       </div>
@@ -61,3 +75,8 @@ function App() {
 }
 
 export default App;
+/*
+
+ 
+
+*/
