@@ -11,8 +11,8 @@ function App() {
   const generatePassword = useCallback(() => {
     let pass = "";
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    if (isCharAllowed) str += ".,?/()!~@#$%^&*:";
     if (isNumAllowed) str += "0123456789";
+    if (isCharAllowed) str += ".,?/()!~@#$%^&*:";
 
     for (let index = 1; index <= length; index++) {
       const char = Math.floor(Math.random() * (str.length + 1));
