@@ -5,7 +5,7 @@ import useCurrencyInfo from "./hooks/useCurrencyInfo";
 function App() {
   const [amount, setAmount] = useState(0);
   const [from, setFrom] = useState("usd");
-  const [to, setTo] = useState("inr");
+  const [to, setTo] = useState("pkr");
   const [convertedAmount, setConvertedAmount] = useState(0);
 
   const currencyInfo = useCurrencyInfo(from);
@@ -27,7 +27,7 @@ function App() {
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
       style={{
-        backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+        backgroundImage: `url('https://www.shutterstock.com/image-photo/blue-money-business-graph-finance-600nw-2469272775.jpg')`,
       }}
     >
       <div className="w-full">
