@@ -33,3 +33,63 @@
     - For hooks that rely on async operations, include error handling (e.g., setting an error state) to avoid unhandled promises and allow components to respond to errors.
     - Since hooks often encapsulate important logic, ensure they are thoroughly tested with unit tests to verify expected behavior.
       - Test different parameter inputs and state changes, especially with edge cases like empty arrays, timeouts, and failures.
+
+### Example Custom Hook
+
+```javascript
+import { useState, useEffect } from "react";
+
+function useFetchData(url, options = {}) {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    let isCancelled = false;
+
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch(url, options);
+        if (!response.ok) throw new Error("Network response was not ok");
+
+        const result = await response.json();
+        if (!isCancelled) setData(result);
+      } catch (err) {
+        if (!isCancelled) setError(err.message);
+      } finally {
+        if (!isCancelled) setLoading(false);
+      }
+    };
+
+    fetchData();
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [url, options]);
+
+  return { data, loading, error };
+}
+
+export default useFetchData;
+```
+
+### Explanation:
+
+- State Management:
+  - data: Stores the fetched data, initially null.
+  - loading: Tracks whether the fetch operation is in progress, initially true.
+  - error: Stores any errors encountered during the fetch process, initially null.
+- useEffect for Fetch Operation:
+  - isCancelled flag: Prevents state updates if the component unmounts mid-fetch.
+  - fetchData Async Function:
+    - Initiate Loading: Sets loading to true to indicate a fetch operation has started.
+    - Fetch Request: Calls fetch(url, options) to retrieve data from the provided URL.
+      - Error Handling: If the response is unsuccessful, it throws an error.
+      - Data Parsing: Converts the response to JSON format, and if successful, updates data.
+    - Error Capture: Sets error state if an error occurs.
+    - Finalize Loading: Sets loading to false after the fetch completes, regardless of outcome.
+  - Cleanup: Sets isCancelled to true on component unmount, avoiding updates to an unmounted component.
+- Return Object:
+  - Exposes { data, loading, error } to the component, enabling easy access to the fetch status, the data, and any errors.
