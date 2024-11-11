@@ -35,7 +35,7 @@ for navigation without losing app state.
 
 ## Outlet
 
-- Similar to Link but adds active styling for the current page link, useful for navigation menus where you want to highlight the active route.
+- Defines where child routes will render. Useful in layouts that need nested routes.
 
 ## Navigate
 
