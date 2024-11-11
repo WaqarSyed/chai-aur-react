@@ -161,3 +161,10 @@ function LoginForm() {
   return <button onClick={() => handleLogin(true)}>Login</button>;
 }
 ```
+
+# 6. Tips for Mastering React Router DOM
+
+- **Plan Routes First** Map out your app’s route structure to keep it organized, especially for complex layouts.
+- **Use Relative Paths in Nested Routes** To simplify navigation, rely on relative paths, which adapt better when the main route changes.
+- **Combine with Context for Authentication** For handling authenticated routes, combine React Router with a global authentication context to manage login states across routes effectively.
+- **Experiment in Small Projects** Create a small project to test different routing scenarios—this is one of the best ways to fully understand React Router DOM.
