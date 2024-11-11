@@ -15,7 +15,19 @@
 
 ## Link
 
-- Renders an anchor tag (<a>) without reloading the page. Use _<Link to="/path">_ for navigation without losing app state.
+- Renders an anchor tag
+
+```html
+<a></a>
+```
+
+without reloading the page. Use
+
+```html
+<link to="/path" />
+```
+
+for navigation without losing app state.
 
 ## NavLink
 
@@ -28,3 +40,21 @@
 ## Navigate
 
 - Programmatically redirects users to a different route. Use it when navigation depends on certain conditions (e.g., after form submission or authentication).
+
+# 3. Essential Hooks
+
+## useNavigate
+
+- Provides programmatic navigation in components. Useful for conditional redirection, like after successful form submission.
+
+## useParams
+
+- Extracts route parameters from the URL. Best used when URLs have dynamic segments (e.g., /profile/:userId).
+
+## useLocation
+
+- Retrieves the current location object. Useful for accessing search parameters, hash values, and pathname.
+
+## useSearchParams
+
+- Manages query parameters, allowing you to read and update the URL's search string (e.g., /search?query=react).
