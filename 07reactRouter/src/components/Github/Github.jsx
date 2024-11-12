@@ -12,12 +12,14 @@ function Github() {
   return (
     <div className="p-4 text-3xl m-4 bg-gray-600 text-center text-white ">
       Github Followers : {data.followers}
-      <img
-        src={data.avatar_url}
-        alt="Github picture "
-        height={200}
-        width={200}
-      />
+      <div className="flex justify-center items-center mt-5">
+        <img
+          src={data.avatar_url}
+          alt="Github picture "
+          height={200}
+          width={200}
+        />
+      </div>
     </div>
   );
 }
