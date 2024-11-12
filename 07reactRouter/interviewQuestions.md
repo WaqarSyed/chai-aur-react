@@ -83,3 +83,48 @@ const goToHome = () => navigate("/");
   </Route>
 </Routes>
 ```
+
+# 9. What is purpose of Outlet component?
+
+- Outlet acts as a placeholder for child routes in nested routing scenarios, allowing child routes to render within the parent component's layout.
+
+# 10. Explain the useLocation hook and provide a scenario where it would be useful.
+
+- useLocation provides access to the current location object, containing information such as pathname, search and hash.
+- **Use Case** : Checking the current path or reading query parameters.
+
+# 11. What is the difference between HashRouter and BrowserRouter?
+
+- **BrowserRouter** : Uses HTML5 history API and works with a standard URL structure. Suitable for applications with server configuration for handling routes.
+
+- **HashRouter** : Appends a hash (#) in the URL, which doesn't require server-side-routing. Ideal for apps that need routing wihtout server configuration.
+
+# 12. How would you protect routes in a React application using React Router DOM ?
+
+- Implement a protected route component that checks authentication status before allowing access.
+
+```javascript
+function ProtectedRoute({ children }) {
+  const isAuthenticated = useAuth();
+  return isAuthenticated ? children : <Navigate to="/login" />;
+}
+```
+
+# 13. Describe how useSearchParams works and when you would use it .
+
+- useSearchParams lets you read and update the URL's query parameters without reloading. Useful in cases like filtering search results by parameters(e.g. ?query=react).
+
+# 14. What is purpose of the **replace** option in Navigate and useNavigate ?
+
+- When replace is true , navigation replaces the current history entry, preventing users from going back to the previous route with the browser's back button.
+
+# 15. How do you animate route transitions in React Router DOM?
+
+- Use libraries like framer-motion to animate route transitions by wrapping components in motion components or using animated containers around Routes.
+
+# 16. What changes were introduced in React Router v6?
+
+- The switch from Switch to Routes.
+- Nested routes with Outlet.
+- Hooks like useNavigate, useLocation, and useParams became more standardized.
+- Removal of exact matching for routes, as React Router now matches best-matching routes automatically.
