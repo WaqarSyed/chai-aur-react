@@ -5,13 +5,20 @@ function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const { setUser } = useContext(UserContext);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setUser({ username, password });
   };
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "gray",
+        padding: "5px",
+        display: "flex",
+        flexWrap: "wrap",
+        gap: "10px",
+      }}
+    >
       <input
         type="text"
         placeholder="username"
