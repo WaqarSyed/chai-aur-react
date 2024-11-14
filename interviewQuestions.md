@@ -3,3 +3,15 @@
 ## 1. Advantages and Disadvantages of React
 
 - Advantages of React include its ability to handle complex user interfaces, its flexibility and reusability of components, and its performance optimization through the use of Virtual DOM. Disadvantages include a steep learning curve for beginners and the need for external libraries or tools to complete a full-featured application.
+
+## 2. What does DOM stand for ?
+
+- DOM stands for Document Object Model.
+
+## 3. What is Virtual DOM?
+
+- Virtual DOM is a lightweight in-memory representation of the actual DOM. It is used to improve the performance of updates and changes to the actual DOM by reducing the number of expensive DOM manipulations.
+
+## 4. How does Virtual DOM works ?
+
+- Virtual DOM works by comparing the current Virtual DOM tree with a new Virtual DOM tree, and then applying the minimal set of changes to the actual DOM. This allows React to efficiently update the user interface without causing unneccessary re-renders or layout changes.
