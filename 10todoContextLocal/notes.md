@@ -65,3 +65,41 @@ useEffect(() => {
   return () => clearTimeout(timer); // Clear timeout if state changes again before 500ms
 }, [state]);
 ```
+
+## 5. Structure Data Thoughtfully
+
+- Store only essential data in local storage (e.g., user settings, small pieces of UI state) to avoid large, nested objects, which can slow down read/write operations and the app’s load time.
+
+## 6. Handle Edge Cases (Invalid or Outdated Data)
+
+- Local storage data can sometimes become outdated or corrupt. Wrap the JSON.parse() call in a try-catch block and set default values if an error occurs.
+
+```javascript
+const initialState = (() => {
+  try {
+    return JSON.parse(localStorage.getItem("myAppData")) || defaultData;
+  } catch (error) {
+    console.error("Failed to load data from local storage:", error);
+    return defaultData;
+  }
+})();
+```
+
+## 7. Support Clear or Reset Functions
+
+- Provide a function in your context to clear or reset the stored data. This is useful for logout flows or when a user wants to reset the app’s settings.
+
+```javascript
+const clearData = () => {
+  localStorage.removeItem("myAppData");
+  setState(defaultData);
+};
+```
+
+## 8. Consider JSON Schema Validation
+
+- For larger apps, use JSON schema validation (e.g., ajv library) to validate stored data. This can prevent issues when the structure of your context changes during app updates.
+
+## 9. Keep the Context Purpose-Focused
+
+- Use context only for values needed across multiple components to avoid bloating the context state. For values needed in a single component or subtree, use local state instead.
