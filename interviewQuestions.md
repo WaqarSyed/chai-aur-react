@@ -39,3 +39,7 @@
 ## 10. What is JSX?
 
 - JSX is a syntax extension for JavaScript that allows developers to write HTML-like elements in thir JavaScript code . It is commonly used in React to describe the structure and content of a components's user interface.
+
+## 11. Can browsers read a JSX file ?
+
+- Browsers cannot read JSX file directly. They must be transpiled , or converted, to JavaScript before they can be interpreted by the browser.
