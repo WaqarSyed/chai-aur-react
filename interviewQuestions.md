@@ -56,3 +56,7 @@
 - In React, everything is a component. A component is a small, reusable piece of code that represents a part of a User Interface.
 
 - Components can be defined as either a class or a function and can include a combination of HTML, CSS and JavaScript code. These components can also be nested and reused throughout the application, which makses it easy to manage and maintain the application's user interface.
+
+## 14. What is the meaning of the component-based architecture of React?
+
+- The component-based architecture of React allows developers to build complex user interfaces by breaking them down into smaller, reusable components. Each component can manage its own state and props, and can be easily reused throughout the application. This structure makes it easy to understand , test, and maintain the application's codebase.
