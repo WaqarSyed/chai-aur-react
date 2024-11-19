@@ -60,3 +60,11 @@
 ## 14. What is the meaning of the component-based architecture of React?
 
 - The component-based architecture of React allows developers to build complex user interfaces by breaking them down into smaller, reusable components. Each component can manage its own state and props, and can be easily reused throughout the application. This structure makes it easy to understand , test, and maintain the application's codebase.
+
+## 15. What are functional components?
+
+- Functional components in React are simply JavaScript functions that return a React element. They do not have state or lifecycle methods and are used for simple, stateless components.
+
+## 16. What are class components in React?
+
+- Class components in React are defined using the ES6 class syntax. They have accesss to state and lifecycle methods and are used for more complex, stateful components.
