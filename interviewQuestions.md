@@ -43,3 +43,10 @@
 ## 11. Can browsers read a JSX file ?
 
 - Browsers cannot read JSX file directly. They must be transpiled , or converted, to JavaScript before they can be interpreted by the browser.
+
+## 12. Explain how Virtual DOM works.
+
+- Virtual DOM is a lightweight, in-memory representation of the actual DOM.
+  It is used to improve the performance of updates and changes to the actual DOM by reducing the number of expensive DOM manipulations.
+
+- When a component's state or prop change, React will create a new Virtual DOM tree, compare it to the previous tree, and then apply only the minimal set of changes necessary to the actual DOM. This improves the performance of the application and reduces the number of un-necessary re-renders.
