@@ -50,3 +50,9 @@
   It is used to improve the performance of updates and changes to the actual DOM by reducing the number of expensive DOM manipulations.
 
 - When a component's state or prop change, React will create a new Virtual DOM tree, compare it to the previous tree, and then apply only the minimal set of changes necessary to the actual DOM. This improves the performance of the application and reduces the number of un-necessary re-renders.
+
+## 13. What are React components?
+
+- In React, everything is a component. A component is a small, reusable piece of code that represents a part of a User Interface.
+
+- Components can be defined as either a class or a function and can include a combination of HTML, CSS and JavaScript code. These components can also be nested and reused throughout the application, which makses it easy to manage and maintain the application's user interface.
