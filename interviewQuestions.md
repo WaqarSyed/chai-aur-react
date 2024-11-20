@@ -74,3 +74,11 @@
 - The main difference in functional and class components in React is that functional components are simple and do not have lifecycle methods , whereas class components have access to state and lifecycle methods and are more powerful.
 
 Additionally , functional components use hooks for state management.
+
+## 18. How to use CSS in React?
+
+- In React, CSS can be added to a component in several ways :
+  - Using inline styles
+  - Using a CSS file and importing it into the component
+  - Using a CSS preprocessor like Sass or Less
+  - Using a CSS-in-JS library like styled-components
