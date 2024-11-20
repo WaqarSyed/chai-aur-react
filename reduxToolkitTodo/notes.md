@@ -1,0 +1,1 @@
+- dispatch uses reducers to make changes in store

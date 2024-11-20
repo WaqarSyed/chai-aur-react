@@ -67,4 +67,10 @@
 
 ## 16. What are class components in React?
 
-- Class components in React are defined using the ES6 class syntax. They have accesss to state and lifecycle methods and are used for more complex, stateful components.
+- Class components in React are defined using the ES6 class syntax. They have access to state and lifecycle methods and are used for more complex, stateful components.
+
+## 17. What is the difference between functional and class components in React?
+
+- The main difference in functional and class components in React is that functional components are simple and do not have lifecycle methods , whereas class components have access to state and lifecycle methods and are more powerful.
+
+Additionally , functional components use hooks for state management.
