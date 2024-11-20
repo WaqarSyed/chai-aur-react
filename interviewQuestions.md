@@ -82,3 +82,7 @@ Additionally , functional components use hooks for state management.
   - Using a CSS file and importing it into the component
   - Using a CSS preprocessor like Sass or Less
   - Using a CSS-in-JS library like styled-components
+
+## 19. How does rendering work in React?
+
+- React's rendering process begins when a components's state or props change. React will create a new Virtual DOM tree, compare it to the previous tree, and then apply only the minimal set of changes necessary to the actual DOM. This process is called **reconciliation**.
