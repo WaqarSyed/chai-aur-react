@@ -96,3 +96,7 @@ State can be updated using the setState method, which triggers a re-render of th
 ## 21. What are Props in React?
 
 - Props in React are used to pass data from a parent component to a child component. They are essentially a way to pass data and methods down the component tree. Props are read-only, meaning that they cannot be modified by the child component.
+
+## 22. What is children prop?
+
+- The children prop is a special prop that is used pass children elements to a component. It is used to pass elements between components, such as a list of items or a set of nested components.
