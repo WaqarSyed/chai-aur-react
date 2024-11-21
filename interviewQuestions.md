@@ -100,3 +100,7 @@ State can be updated using the setState method, which triggers a re-render of th
 ## 22. What is children prop?
 
 - The children prop is a special prop that is used pass children elements to a component. It is used to pass elements between components, such as a list of items or a set of nested components.
+
+## 23. What is a higher-order component in React?
+
+- A higher-order component (HOC) is function that takes a component as an argument and returns a new component with additional functionality. HOCs are used to reuse component logic, such as authentication or performance optimization.
