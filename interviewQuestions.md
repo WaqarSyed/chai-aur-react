@@ -91,4 +91,8 @@ Additionally , functional components use hooks for state management.
 
 - State in React is an object that holds data that can change, and it is managed by a component. It is used to store and update the component's data and can be passed down to the child components as props.
 
-State cna be updated using the setState method, which triggers a re-render of the component, updating the user interface.
+State can be updated using the setState method, which triggers a re-render of the component, updating the user interface.
+
+## 21. What are Props in React?
+
+- Props in React are used to pass data from a parent component to a child component. They are essentially a way to pass data and methods down the component tree. Props are read-only, meaning that they cannot be modified by the child component.
