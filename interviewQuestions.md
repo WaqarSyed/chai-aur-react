@@ -108,3 +108,11 @@ State can be updated using the setState method, which triggers a re-render of th
 ## 24. How to create props proxy for HOC component?
 
 - To create a props proxy for an HOC component, you can use the React.forwardRef function. This function allows you to pass props through to the wrapped component, preserving the original component's props.
+
+## 25. What are controlled components?
+
+- Controlled components are components that are controlled by the state of the parent component. The parent component manages the component's state, and the child component's behaviour is determined by the parent component's state.
+
+## 26. What are uncontrolled components?
+
+- Uncontrolled components are components that manage their own state internally, and their behavior is not determined by the state of parent component.
