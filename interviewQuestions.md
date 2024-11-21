@@ -104,3 +104,7 @@ State can be updated using the setState method, which triggers a re-render of th
 ## 23. What is a higher-order component in React?
 
 - A higher-order component (HOC) is function that takes a component as an argument and returns a new component with additional functionality. HOCs are used to reuse component logic, such as authentication or performance optimization.
+
+## 24. How to create props proxy for HOC component?
+
+- To create a props proxy for an HOC component, you can use the React.forwardRef function. This function allows you to pass props through to the wrapped component, preserving the original component's props.
