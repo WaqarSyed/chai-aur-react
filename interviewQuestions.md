@@ -124,3 +124,7 @@ State can be updated using the setState method, which triggers a re-render of th
 ## 28. How to update state in React functional component?
 
 - To update state in React functional component, you can use the useState hook. This hook returns an array containing the current state and a function to update it.
+
+## 29. How to differentiate between State and Props?
+
+- State is the internal data of a component that can change and is managed by the component itself. Props are external data passed to a component from its parent component. State can be updated by the component, whereas props cannot be updated by the component.
