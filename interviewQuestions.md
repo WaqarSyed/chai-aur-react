@@ -132,3 +132,11 @@ State can be updated using the setState method, which triggers a re-render of th
 ## 30. What is Lifting State Up in React?
 
 - Lifting state up in React refers to the process of moving state management from a child component to its parent component. This is done to make the state more easily accessible and manageable for the entire component tree.
+
+## 31. What is an Event in React?
+
+- An Event in React is a way to respond to user interactions such as clicks, hover, or form submissions.
+
+## 32. How to Handle Events in React(for both functional and class components)?
+
+- In React, events can be handled using the _on_ Keyword, followed by the event name and a callback function. For example, to handle a button click event, you would use onClick={handleClick}. This can be done in both functional and class components.
