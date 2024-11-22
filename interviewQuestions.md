@@ -120,3 +120,7 @@ State can be updated using the setState method, which triggers a re-render of th
 ## 27. How to update state in React class components?
 
 - To update state in a React class component, you can use the setState method. This method takes an object or function as an argument, and it will merge the new state with the existing state.
+
+## 28. How to update state in React functional component?
+
+- To update state in React functional component, you can use the useState hook. This hook returns an array containing the current state and a function to update it.
