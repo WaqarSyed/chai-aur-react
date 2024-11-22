@@ -116,3 +116,7 @@ State can be updated using the setState method, which triggers a re-render of th
 ## 26. What are uncontrolled components?
 
 - Uncontrolled components are components that manage their own state internally, and their behavior is not determined by the state of parent component.
+
+## 27. How to update state in React class components?
+
+- To update state in a React class component, you can use the setState method. This method takes an object or function as an argument, and it will merge the new state with the existing state.
