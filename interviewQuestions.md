@@ -128,3 +128,7 @@ State can be updated using the setState method, which triggers a re-render of th
 ## 29. How to differentiate between State and Props?
 
 - State is the internal data of a component that can change and is managed by the component itself. Props are external data passed to a component from its parent component. State can be updated by the component, whereas props cannot be updated by the component.
+
+## 30. What is Lifting State Up in React?
+
+- Lifting state up in React refers to the process of moving state management from a child component to its parent component. This is done to make the state more easily accessible and manageable for the entire component tree.
