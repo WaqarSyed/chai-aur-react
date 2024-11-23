@@ -148,3 +148,12 @@ State can be updated using the setState method, which triggers a re-render of th
 ## 34. What are synthetic events in React?
 
 - Synthetic events in React are a cross-browser compatible way to handle events. They are used to normalize the behaviour of different browser event systems and provide a consistent API for handling events.
+
+## 35. How to pass parameter to an event handler?
+
+- To pass a parameter to an event handler, you can use an arrow function to wrap the event handler. For example:
+
+```html
+<button onClick={ () => {handleClick(parameter)}}>
+  </button>
+```
