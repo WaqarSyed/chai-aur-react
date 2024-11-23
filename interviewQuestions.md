@@ -140,3 +140,7 @@ State can be updated using the setState method, which triggers a re-render of th
 ## 32. How to Handle Events in React(for both functional and class components)?
 
 - In React, events can be handled using the _on_ Keyword, followed by the event name and a callback function. For example, to handle a button click event, you would use onClick={handleClick}. This can be done in both functional and class components.
+
+## 33. What is the difference between HTML and React Event Handling?
+
+- In HTML, events are handled using event attributes, such as onclick or onchange. In React, events are handled using the on keyword and a callback function. React's event handling system is more powerful and flexible than the traditioal HTML event handling system.
