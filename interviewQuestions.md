@@ -281,3 +281,36 @@ export default MyComponent;
 ## 42. How to create refs?
 
 - To create a ref, you can use the useRef hook, which returns a ref object. You can then assign this object to a ref attribute on a JSX element.
+
+## 43. What are forward refs and can you give me a code example for it?
+
+- A forward ref is a way to pass a ref through a component to a child component. It allows you to access the ref of a child component from the parent component. Here's an example of how to create a forward ref:
+
+```javascript
+import React, { forwardRef } from "react";
+
+const ChildComponent = forwardRef((props, ref) => {
+  return <input type="text" ref={ref} />;
+});
+
+function ParentComponent() {
+  inputRef = React.useRef(null);
+
+  function handleClick() {
+    inputRef.current.value = "hello, world";
+  }
+  return (
+    <div>
+      <ChildComponent ref={inputRef} />
+      <button onClick={handleClick}>Update Input</button>
+    </div>
+  );
+}
+export default ParentComponent;
+```
+
+- In this example , the ChildComponent is defined as a "forward ref" component using the forwardRef higher-order component. The forwardRef function takes a component and returns a new component that can accept a ref as a prop.
+
+- The ParentComponent has a ref object inputRef that is passed as a prop to the ChildComponent using the ref attribute. Inside the child component , the ref prop is passed as a second argument to the component function , this way is passed to the input element using the ref attribute.
+
+- When the button is clicked , it triggers the handleClick function, which updates the value of the input field by accessing its value property via the ref object. This way. the ref object can be passed through the component hierarchy to access elements deep down in the tree.
