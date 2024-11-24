@@ -314,3 +314,7 @@ export default ParentComponent;
 - The ParentComponent has a ref object inputRef that is passed as a prop to the ChildComponent using the ref attribute. Inside the child component , the ref prop is passed as a second argument to the component function , this way is passed to the input element using the ref attribute.
 
 - When the button is clicked , it triggers the handleClick function, which updates the value of the input field by accessing its value property via the ref object. This way. the ref object can be passed through the component hierarchy to access elements deep down in the tree.
+
+## 44. Can you create your custom React hooks ?
+
+- Yes, you can create your custom React hooks by following the naming convention "use" and using state and other hooks inside it.
