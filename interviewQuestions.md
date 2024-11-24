@@ -216,3 +216,42 @@ function MyComponent() {
 - The useEffect hook is used to run an async function fetchData that fetches data from an API and updates the component's state with the result. The empty array [] passed as the second argument to useEffect means that the effect will only run once, when the component is first rendered.
 
 - The useEffect hook allows the component to update its state and re-render in response to changes in some variable. In this case, when the component is first rendered, the data is fetched and the component re-renders with the updated data.
+
+## 40. When are we using the useMemo hook and why ?
+
+- useMemo is a hook that allows you to memoize a value. It is used to optimize the performance of a component by only re-computing a value if its dependencies have changed. This can be useful for avoiding expensive calculations or rendering operations. Here's an example of how to use the useMemo hook:
+
+```javascript
+import React, { useState, useMemo } from "react";
+
+function MyComponent() {
+  const [a, setA] = useState(1);
+  const [b, setB] = useState(1);
+
+  const result = useMemo(() => {
+    // this a costly calculation
+
+    let sum = 0;
+    for (let i = 0; i < 1000000; i++) {
+      sum += i;
+    }
+    return sum;
+  }, [a, b]);
+
+  return (
+    <div>
+      <input type="number" value={a} onChange={(e) => setA(e.target.value)} />
+      <input type="number" value={b} onChange={(e) => setB(e.target.value)} />
+      <p> The result is : {result}</p>
+    </div>
+  );
+}
+
+export default MyComponent;
+```
+
+- In this example, the useMemo hook is used to memoize the result of a costly calculation that depends on the values of a and b. The useMemo hook takes two arguments : the first is the function that performs the calculation, and the second is an array of dependencies.
+
+- The component has two input fields, where the user can set the values of a and b. When either of the inputs change, the component re-renders, but the result is only recalculated if a or b changed, which is determined by the dependencies array [a,b] .
+
+- This prevents the costly calculation from being performed every time the component re-renders, improving the performance of the application.
