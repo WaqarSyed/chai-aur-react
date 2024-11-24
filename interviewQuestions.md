@@ -255,3 +255,25 @@ export default MyComponent;
 - The component has two input fields, where the user can set the values of a and b. When either of the inputs change, the component re-renders, but the result is only recalculated if a or b changed, which is determined by the dependencies array [a,b] .
 
 - This prevents the costly calculation from being performed every time the component re-renders, improving the performance of the application.
+
+## 41. What is useRef being used for?
+
+- useRef is a hook that allows you to create a refference to a DOM node or a Javascript object. It can be used to access a DOM node directly, or to store a value that should not cause a re-render when it changes. Here's an example of how to use the useRef hook :
+
+```javascript
+import React, { useRef } from "react";
+
+function MyComponent() {
+  const inputRef = useRef(null);
+  function handleClick() {
+    inputRef.current.value = "Hello, World";
+  }
+  return (
+    <div>
+      <input type="text" ref={inputRef} />
+      <button onClick={handleClick}>Update Input</button>
+    </div>
+  );
+}
+export default MyComponent;
+```
