@@ -277,3 +277,7 @@ function MyComponent() {
 }
 export default MyComponent;
 ```
+
+## 42. How to create refs?
+
+- To create a ref, you can use the useRef hook, which returns a ref object. You can then assign this object to a ref attribute on a JSX element.
