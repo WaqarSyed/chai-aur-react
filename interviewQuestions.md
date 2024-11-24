@@ -161,3 +161,26 @@ State can be updated using the setState method, which triggers a re-render of th
 ## 36. What are React Hooks?
 
 - React Hooks are functions that allow you to use state and other React features in functional components. They were introduced in React 16.8.
+
+## 37. When were the React Hooks introduced first?
+
+- React hooks were first introduced in React 16.8 in 2019.
+
+## 38. Can you explain the useState hook with examples?
+
+- The useState hook allows you to add state to a functional component. It returns an array with two values: the current state and a function to update it. Here's an example of how to use the useState hook:
+
+```javascript
+import React, { useState } from "react";
+
+function MyComponent() {
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click Me</button>
+    </div>
+  );
+}
+export default MyComponent;
+```
