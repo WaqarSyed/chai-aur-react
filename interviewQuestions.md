@@ -330,3 +330,7 @@ export default ParentComponent;
 - The Context API in React allows you to share data between components without passing props through every level of the component tree. It provides a way for components to access data that is "global" to the component tree, such as a user's authentication status or a theme.
 
 - The Context API consists of a Provider component , which provides the data, and a Consumer component , which accesses the data.
+
+## 47. What is React Router?
+
+- React Router is a library for routing in React apps. It allows you to define the different routes in your application and render the appropriate components for each route. This makes it easy to change the displayed content based on the current URL , without having to refresh the page.
