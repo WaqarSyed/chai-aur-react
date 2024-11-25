@@ -340,3 +340,7 @@ export default ParentComponent;
 - Pure components are components that only re-render if their props or state have changed. They are optimized for performance , and they can improve the performance of your application by reducing the number of unnecessary re-renders.
 
 - Pure components are also known as "functional components" or "stateless components" and they are defined by a function.
+
+## 49. Can you update the React state directly?
+
+- No, you cannot update the React state directly. You should always use the **setState** method to update the state, which will trigger a re-render of the component.
