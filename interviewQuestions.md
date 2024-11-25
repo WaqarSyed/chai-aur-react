@@ -324,3 +324,9 @@ export default ParentComponent;
 - When creating custom React hooks, it's important to keep in mind that they should only call other hooks at the top level and not inside loops or conditions.
 
 - Also, it's important to make sure that the hook only performs one specific action.
+
+## 46. What is the Context API in React?
+
+- The Context API in React allows you to share data between components without passing props through every level of the component tree. It provides a way for components to access data that is "global" to the component tree, such as a user's authentication status or a theme.
+
+- The Context API consists of a Provider component , which provides the data, and a Consumer component , which accesses the data.
