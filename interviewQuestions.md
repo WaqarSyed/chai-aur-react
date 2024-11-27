@@ -352,3 +352,11 @@ export default ParentComponent;
 ## 51. What is "key" prop and what is the benefit of using it in arrays of elements?
 
 - The "key" prop is used to give a unique identifier to each item in array of elements. When elements are re-rendered, React uses the key to identify which elements have changed , added, or removed. This allows React to update the DOM efficiently , improving the performance of the application.
+
+## 52. What are different phases of component lifecycle in React ?
+
+- The different phases of the component lifecycle in React are :
+
+  - **Mounting** : When a component is being added to the DOM.
+  - **Updating** : When a component's props or state change.
+  - **Unmounting** : When a component is being removed from the DOM.
