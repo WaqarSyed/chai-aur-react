@@ -373,3 +373,7 @@ export default ParentComponent;
 ## 54. What is the purpose of using super constructor with props argument?
 
 - The purpose of using **super(props) constructor** with the props argument is to call the constructor of parent class and pass in the props. It is necessary because the parent's class constructor sets up the initial state and props of the component and must be called before the child class's constructor.
+
+## 55. Why React uses className over class attribute?
+
+- React uses className attribute over class attribute because class is reserved keyword in JavaScript. Using className avoids any confusion and ensures that the attribute will be interpreted as intended.
