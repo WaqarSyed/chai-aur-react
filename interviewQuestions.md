@@ -348,3 +348,7 @@ export default ParentComponent;
 ## 50. What is the purpose of callback function as an argument of **setState()**?
 
 - The callback function passed as an argument to **setState** is called after the state has been updated and the component has re-rendered. It can be used to perform any additional actions, such as sending a network request, that depend on the updated state.
+
+## 51. What is "key" prop and what is the benefit of using it in arrays of elements?
+
+- The "key" prop is used to give a unique identifier to each item in array of elements. When elements are re-rendered, React uses the key to identify which elements have changed , added, or removed. This allows React to update the DOM efficiently , improving the performance of the application.
