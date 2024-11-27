@@ -369,3 +369,7 @@ export default ParentComponent;
   - **componentWillUnmount** : Called before the component is removed from the DOM.
   - **render** : Called whenever the component needs to update the DOM.
   - **constructor** : Called before the component is added to the DOM.
+
+## 54. What is the purpose of using super constructor with props argument?
+
+- The purpose of using **super(props) constructor** with the props argument is to call the constructor of parent class and pass in the props. It is necessary because the parent's class constructor sets up the initial state and props of the component and must be called before the child class's constructor.
