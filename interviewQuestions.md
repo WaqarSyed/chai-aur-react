@@ -377,3 +377,7 @@ export default ParentComponent;
 ## 55. Why React uses className over class attribute?
 
 - React uses className attribute over class attribute because class is reserved keyword in JavaScript. Using className avoids any confusion and ensures that the attribute will be interpreted as intended.
+
+## 56. What are fragments ?
+
+- A fragment is a way to group a list of children without adding extra nodes to the DOM. It allows you to return multiple elements from a component's render method without wrapping them in an additional DOM node. Fragments are represented by an empty JSX tag :<> or </>
