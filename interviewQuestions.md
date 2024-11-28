@@ -393,3 +393,7 @@ export default ParentComponent;
 ## 59. What are error boundaries in React v16?
 
 - Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors and display a fallback UI. They were introduced in React v16 and they allow you handle errors gracefully and ensures that your application continues to function even if there is an error.
+
+## 60. What is the use of **react-dom** package?
+
+- The **react-dom** package is a package that provides the renderer for React components . It provides the functions that are used to render React components on the web (DOM).
