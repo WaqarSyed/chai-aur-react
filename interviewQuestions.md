@@ -381,3 +381,7 @@ export default ParentComponent;
 ## 56. What are fragments ?
 
 - A fragment is a way to group a list of children without adding extra nodes to the DOM. It allows you to return multiple elements from a component's render method without wrapping them in an additional DOM node. Fragments are represented by an empty JSX tag :<> or </>
+
+## 57. Why fragments are better than container divs?
+
+- Fragments are better than container divs because they don't add an extra node to the DOM. This can make the rendered HTML cleaner and more efficient, especially when you have a component that renders a list of items. Additionally, it helps with accessibility because it doesn't create an unnecessary wrapper element around the content.
