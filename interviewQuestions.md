@@ -389,3 +389,7 @@ export default ParentComponent;
 ## 58. What are stateless components ?
 
 - Stateless components , also known as functional components , are components that don't have any internal state. They are defined as a function , they receive props and they return JSX to be rendered. They are simpler , easy to reason about and less prone to bugs than stateful components because they don't have lifecycle methods.
+
+## 59. What are error boundaries in React v16?
+
+- Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors and display a fallback UI. They were introduced in React v16 and they allow you handle errors gracefully and ensures that your application continues to function even if there is an error.
