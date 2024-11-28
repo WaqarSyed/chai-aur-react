@@ -385,3 +385,7 @@ export default ParentComponent;
 ## 57. Why fragments are better than container divs?
 
 - Fragments are better than container divs because they don't add an extra node to the DOM. This can make the rendered HTML cleaner and more efficient, especially when you have a component that renders a list of items. Additionally, it helps with accessibility because it doesn't create an unnecessary wrapper element around the content.
+
+## 58. What are stateless components ?
+
+- Stateless components , also known as functional components , are components that don't have any internal state. They are defined as a function , they receive props and they return JSX to be rendered. They are simpler , easy to reason about and less prone to bugs than stateful components because they don't have lifecycle methods.
