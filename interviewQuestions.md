@@ -397,3 +397,7 @@ export default ParentComponent;
 ## 60. What is the use of **react-dom** package?
 
 - The **react-dom** package is a package that provides the renderer for React components . It provides the functions that are used to render React components on the web (DOM).
+
+## 61. What will happen if you use **setState()** in constructor?
+
+- If you use **setState()** in constructor , it will cause the component to re-render before it is added to the DOM. This can cause unexpected behaviour and should be avoided. Instead , it is recommended to intialize the state with the constructor's props and use setState() in **componentDidMount.**
