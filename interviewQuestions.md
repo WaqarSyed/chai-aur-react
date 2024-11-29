@@ -405,3 +405,7 @@ export default ParentComponent;
 ## 62. What is the impact of indexes as keys?
 
 - Using indexes as keys can have a negative impact on performance because they don't provide a stable identity for elements, and React has to rely on the order of elements in the array to determine which elements have changed. This can lead to unnecessary re-renders.
+
+## 63. How do you implement Server Side Rendering or SSR?
+
+- To implement Server Side Rendering (SSR) in a React application , you can use a library such as Next.js or ReactDOMServer. These libraries allow you to render your React components on the Server and send the resulting HTML to the browser. This can improve the performance of your application by reducing the initial load time and providing a better experience for search engines.
