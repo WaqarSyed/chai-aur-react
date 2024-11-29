@@ -401,3 +401,7 @@ export default ParentComponent;
 ## 61. What will happen if you use **setState()** in constructor?
 
 - If you use **setState()** in constructor , it will cause the component to re-render before it is added to the DOM. This can cause unexpected behaviour and should be avoided. Instead , it is recommended to intialize the state with the constructor's props and use setState() in **componentDidMount.**
+
+## 62. What is the impact of indexes as keys?
+
+- Using indexes as keys can have a negative impact on performance because they don't provide a stable identity for elements, and React has to rely on the order of elements in the array to determine which elements have changed. This can lead to unnecessary re-renders.
