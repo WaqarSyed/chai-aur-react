@@ -438,3 +438,7 @@ export default ParentComponent;
 ## 68. Why do we need to pass a function to **setState()**?
 
 - We need to pass a function to **setState()** instead of an object because setState() is asynchronous , it batches multiple calls together and it only updates the component once. By passing a function , we ensure that the latest state is used when the component re-renders.
+
+## 69. What is strict mode in React?
+
+- Strict mode is a development-only feature in React that highlights potential problems in an application. When a component is rendered in Strict mode , React will run extra checks and warnings for any potential issues. This can help you identify and fix problems before they become a bigger issue.
