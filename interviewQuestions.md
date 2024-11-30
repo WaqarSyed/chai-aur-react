@@ -430,3 +430,7 @@ export default ParentComponent;
 ## 66. What is the purpose of **getDerivedStateFromProps()** lifecycle method?
 
 - The purpose of **getDerivedStateFromProps()** is to provide a way to synchronize a component's internal state with its props. This lifecycle method is called before **render()** and it allows you to update the internal state based on changes in the props. It is used as an alternative to **componentWillReceiveProps()**.
+
+## 67. What is the purpose of **getSnapshotBeforeUpdate()** lifecycle method?
+
+- The purpose of **getSnapshotBeforeUpdate()** is to capture some information from the DOM before it is potentially changed. This lifecycle method is called right before the browser updates the DOM and it allows you to capture the current scroll position or other information that you might want to use later.
