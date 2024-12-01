@@ -458,3 +458,7 @@ export default ParentComponent;
 ## 73. Is it possible to use React without rendering HTML?
 
 - Yes, it is possible to use React without rendering HTML. React can be used to build user interfaces for native mobile apps or Virtual Reality. React Native and React VR are examples of libraries that allow you to use React to build apps for those environments.
+
+## 74. You can't update props in React. Why?
+
+- You can't update props in React because they are passed down from parent component and are consisdered to be immutable. Instead you should use state to manage data that can change within a component , and pass that data down to child components as props.
