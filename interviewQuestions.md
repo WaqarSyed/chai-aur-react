@@ -443,6 +443,10 @@ export default ParentComponent;
 
 - Strict mode is a development-only feature in React that highlights potential problems in an application. When a component is rendered in Strict mode , React will run extra checks and warnings for any potential issues. This can help you identify and fix problems before they become a bigger issue.
 
-## 70. Can component re-render without calling setState?
+## 70. Can component re-render without calling **setState**?
 
-- You can force a component to re-render without calling setState by changing its key prop. This will cause React to treat the component as a new one and it will re-render it. This can be useful in some cases, but its generally not recommended because it can cause unnecessary re-renders and negatively impact performance.
+- You can force a component to re-render without calling **setState** by changing its key prop. This will cause React to treat the component as a new one and it will re-render it. This can be useful in some cases, but its generally not recommended because it can cause unnecessary re-renders and negatively impact performance.
+
+## 71. What is the difference between React and ReactDOM?
+
+- React is a JavaScript library for building User Interfaces. It provides a way to build re-usable UI components and manage their state. ReactDOM is a separate library that provides specific methods for interacting with the DOM, such as **render()** and **unmountComponentAtNode()**. ReactDOM is glue that connects React with the DOM.
