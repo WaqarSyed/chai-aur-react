@@ -450,3 +450,7 @@ export default ParentComponent;
 ## 71. What is the difference between React and ReactDOM?
 
 - React is a JavaScript library for building User Interfaces. It provides a way to build re-usable UI components and manage their state. ReactDOM is a separate library that provides specific methods for interacting with the DOM, such as **render()** and **unmountComponentAtNode()**. ReactDOM is glue that connects React with the DOM.
+
+## 72. Why is ReactDOM separated from React?
+
+- React and ReactDOM are separated to provide better flexibility in different environments. React can be used to build the interfaces on the Web, on Mobile , or on Desktop without having to change the core library. ReactDOM provides the specific methods needed to render components on the Web.
