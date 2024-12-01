@@ -454,3 +454,7 @@ export default ParentComponent;
 ## 72. Why is ReactDOM separated from React?
 
 - React and ReactDOM are separated to provide better flexibility in different environments. React can be used to build the interfaces on the Web, on Mobile , or on Desktop without having to change the core library. ReactDOM provides the specific methods needed to render components on the Web.
+
+## 73. Is it possible to use React without rendering HTML?
+
+- Yes, it is possible to use React without rendering HTML. React can be used to build user interfaces for native mobile apps or Virtual Reality. React Native and React VR are examples of libraries that allow you to use React to build apps for those environments.
