@@ -465,4 +465,8 @@ export default ParentComponent;
 
 ## 75. How to focus an input element on page load?
 
-- To focus an input element on page load, you can use the **ref** attribute to create a reference to the input element , and then call the **focus()** method on that reference in the **componentDidMount()** lifecycle method.
+- To focus an input element on page load, you can use the **ref** property to create a reference to the input element , and then call the **focus()** method on that reference in the **componentDidMount()** lifecycle method.
+
+## 76. How to programmatically trigger a click event in React?
+
+- To programmatically trigger a click event in React, you can use the **ref** property to create a reference to the element, and then call the **click()** method on that reference.
