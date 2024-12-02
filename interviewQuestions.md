@@ -462,3 +462,7 @@ export default ParentComponent;
 ## 74. You can't update props in React. Why?
 
 - You can't update props in React because they are passed down from parent component and are consisdered to be immutable. Instead you should use state to manage data that can change within a component , and pass that data down to child components as props.
+
+## 75. How to focus an input element on page load?
+
+- To focus an input element on page load, you can use the **ref** attribute to create a reference to the input element , and then call the **focus()** method on that reference in the **componentDidMount()** lifecycle method.
