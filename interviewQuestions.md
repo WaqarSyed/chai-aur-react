@@ -482,3 +482,7 @@ export default ParentComponent;
 ## 79. What is flux?
 
 - Flux is an architecture for managing the state of an application. It is designed to be used with React and it provides a unidirectional data flow, where data is passed down through components in an hierarchical structure.
+
+## 80. What is Redux? Do you know any alternatives?
+
+- Redux is a library for managing the state of an application. It provides a central store to hold the state, and it uses actions and reducers to manage the state changes. Alternatives to Redux are Mobx , Apollo, and Unstated-next.
