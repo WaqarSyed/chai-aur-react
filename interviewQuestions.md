@@ -486,3 +486,11 @@ export default ParentComponent;
 ## 80. What is Redux? Do you know any alternatives?
 
 - Redux is a library for managing the state of an application. It provides a central store to hold the state, and it uses actions and reducers to manage the state changes. Alternatives to Redux are Mobx , Apollo, and Unstated-next.
+
+## 81. What are the core priciples of Redux?
+
+- The core priciples of Redux are :
+
+  - The state of the application is stored in a single immutable state tree
+  - The state can only be modified by emitting an action, an object describing the change
+  - To specify how the state tree is transformed by actions , you write pure reducers
