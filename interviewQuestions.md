@@ -494,3 +494,12 @@ export default ParentComponent;
   - The state of the application is stored in a single immutable state tree
   - The state can only be modified by emitting an action, an object describing the change
   - To specify how the state tree is transformed by actions , you write pure reducers
+
+## 82. What are the downsides of Redux compared to Flux?
+
+- The downsides of Redux compared to Flux are :
+
+  - The learning curve is steeper as it has a lot more concepts
+  - It can create unnecessary complexity for small or simple applications
+  - It can make debugging more difficult because the state is not visible in the components
+  - It can lead to verbose and repetive code because actions and action creators are separate files
