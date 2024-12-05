@@ -519,3 +519,9 @@ export default ParentComponent;
 ## 86. What is Redux Thunk?
 
 - Redux Thunk is middleware that allows you to write action creators that return a function instead of an action. This function can then be used to perform async logic and dispatch other actions.
+
+## 87. What is the difference between React Native and React?
+
+- React Native is a framework for building mobile applications using React. It provides a way to use React to build apps for IOS and Android. React, on the other hand , is JavaScript library for building user interfaces .
+
+React Native uses a subset of React and provides platform-specific components and APIs to access the device's native features.
