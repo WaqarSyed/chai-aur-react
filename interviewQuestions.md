@@ -511,3 +511,7 @@ export default ParentComponent;
 ## 84. Why are Redux state functions are called reducers?
 
 - Redux state functions are called reducers because they are used to reduce the current state and an action to the next state. The reducer takes the current state and an action as input and returns the next state.
+
+## 85. What is redux-saga?
+
+- redux-saga is library that allows you to handle side effects in a Redux application by using generator functions. It provides a way to handle async actions and to separate the logic for handling side effects from the rest of the application.
