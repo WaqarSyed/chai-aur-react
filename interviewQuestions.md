@@ -515,3 +515,7 @@ export default ParentComponent;
 ## 85. What is redux-saga?
 
 - redux-saga is library that allows you to handle side effects in a Redux application by using generator functions. It provides a way to handle async actions and to separate the logic for handling side effects from the rest of the application.
+
+## 86. What is Redux Thunk?
+
+- Redux Thunk is middleware that allows you to write action creators that return a function instead of an action. This function can then be used to perform async logic and dispatch other actions.
