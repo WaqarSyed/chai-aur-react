@@ -525,3 +525,13 @@ export default ParentComponent;
 - React Native is a framework for building mobile applications using React. It provides a way to use React to build apps for IOS and Android. React, on the other hand , is JavaScript library for building user interfaces .
 
 React Native uses a subset of React and provides platform-specific components and APIs to access the device's native features.
+
+## 88. What is NextJS and major features of it?
+
+- NextJS is a framework for building web applications with React. It provides a set of features for building server-rendered React applications , including:
+
+  - Server-side rendering (SSR) out of the box
+  - Automatic code splitting for faster load times
+  - Built-in development server with hot reloading
+  - Easy setup for custom routes with file-system based routing
+  - Static site generation (SSG)
