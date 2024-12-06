@@ -543,3 +543,7 @@ React Native uses a subset of React and provides platform-specific components an
 ## 90. What is route based code splitting ?
 
 - Route-based code splitting is a technique that allows you to split your application's JavaScript code into smaller chunks based on the routes in your application. This can improve the performance of your application by only loading the code that is needed for the current page or component.
+
+## 91. Is it possible to use react without JSX?
+
+- Yes, it is possible to use React without JSX. React provides a way to use JavaScript to create elements, and you can use JavaScript to create the same elements that you would create with JSX.
