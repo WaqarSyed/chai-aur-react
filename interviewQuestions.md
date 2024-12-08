@@ -574,3 +574,7 @@ React Native uses a subset of React and provides platform-specific components an
 ## 97. What is the difference between async mode and concurrent mode?
 
 - Async mode is an experimental feature that allows React to schedule updates and render components asynchronously. This can improve the performance of an application by reducing the number of updates that needs to processed at the same time. Concurrent mode is a feature that allows React to work in an asychronous way and it's not yet released but it's planned to be in the future.
+
+## 98. What is state mutation and how to prevent it?
+
+- State mutation is when the current state is modified directly, instead of creating a new state object. This can make it difficult to track changes and can lead to unexpected behavior . To prevent state mutation , you should use the spread operator or object.assign() to create a new state object and only update the properties that need to be changed.
