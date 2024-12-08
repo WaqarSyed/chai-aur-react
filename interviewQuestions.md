@@ -562,3 +562,7 @@ React Native uses a subset of React and provides platform-specific components an
 - A try catch block is language level construct that allows you to handle exceptions that occur during the execution of the code inside the block.
 
 - Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors and display a fallback UI. Error boundaries are used specifically to handle errors in React applications, whereas try-catch block are used to handle exceptions in JavaScript.
+
+## 95. How to fetch data with React Hooks?
+
+- You can use the useEffect hook to fetch data in a React functional component. The useEffect hook allows you to run a side effect , such as fetching data , after the component has rendered. You can also use useState to store the fetched data and update the component when the data is available.
