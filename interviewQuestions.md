@@ -547,3 +547,7 @@ React Native uses a subset of React and provides platform-specific components an
 ## 91. Is it possible to use react without JSX?
 
 - Yes, it is possible to use React without JSX. React provides a way to use JavaScript to create elements, and you can use JavaScript to create the same elements that you would create with JSX.
+
+## 92. What is render hijacking in React?
+
+- Render hijacking in React is a technique that allows you to modify the rendered output of a component by wrapping it in another component. The wrapped component can then add or remove elements , change the styles, or modify the behavior of the original component.
