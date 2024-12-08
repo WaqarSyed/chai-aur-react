@@ -566,3 +566,7 @@ React Native uses a subset of React and provides platform-specific components an
 ## 95. How to fetch data with React Hooks?
 
 - You can use the useEffect hook to fetch data in a React functional component. The useEffect hook allows you to run a side effect , such as fetching data , after the component has rendered. You can also use useState to store the fetched data and update the component when the data is available.
+
+## 96. What is Concurrent Rendering?
+
+- Concurrent rendering is feature of React that allows the browser to continue rendering the rest of the application while a component is being updated. This can improve the user experience by providing smoother animations and reducing the perceived time to load the application.
