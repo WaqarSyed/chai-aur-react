@@ -551,3 +551,7 @@ React Native uses a subset of React and provides platform-specific components an
 ## 92. What is render hijacking in React?
 
 - Render hijacking in React is a technique that allows you to modify the rendered output of a component by wrapping it in another component. The wrapped component can then add or remove elements , change the styles, or modify the behavior of the original component.
+
+## 93. What is React memo function?
+
+- React memo is a higher-order component that allows you to optimize the performance of functional components by memoizing the component's output. It prevents the component from re-rendering when its props haven't changed.
