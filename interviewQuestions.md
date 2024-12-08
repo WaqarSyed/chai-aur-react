@@ -555,3 +555,10 @@ React Native uses a subset of React and provides platform-specific components an
 ## 93. What is React memo function?
 
 - React memo is a higher-order component that allows you to optimize the performance of functional components by memoizing the component's output. It prevents the component from re-rendering when its props haven't changed.
+
+## 94. What is the difference between try catch block and error boundaries?
+
+- Try catch block works with imperative code whereas error boundaries are meant for declarative code to render on the screen.
+- A try catch block is language level construct that allows you to handle exceptions that occur during the execution of the code inside the block.
+
+- Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors and display a fallback UI. Error boundaries are used specifically to handle errors in React applications, whereas try-catch block are used to handle exceptions in JavaScript.
