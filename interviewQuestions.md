@@ -570,3 +570,7 @@ React Native uses a subset of React and provides platform-specific components an
 ## 96. What is Concurrent Rendering?
 
 - Concurrent rendering is feature of React that allows the browser to continue rendering the rest of the application while a component is being updated. This can improve the user experience by providing smoother animations and reducing the perceived time to load the application.
+
+## 97. What is the difference between async mode and concurrent mode?
+
+- Async mode is an experimental feature that allows React to schedule updates and render components asynchronously. This can improve the performance of an application by reducing the number of updates that needs to processed at the same time. Concurrent mode is a feature that allows React to work in an asychronous way and it's not yet released but it's planned to be in the future.
