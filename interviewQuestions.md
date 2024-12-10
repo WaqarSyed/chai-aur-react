@@ -587,3 +587,7 @@ React Native uses a subset of React and provides platform-specific components an
   - Better type checking and fewer runtime errors
   - Improved developer experience with autocompletion and better error messages
   - Better documentation and understanding of the codebase
+
+## 100. What is the purpose of **eslint** plugin for hooks?
+
+- The ESlint plugin for hooks is a set of rules that enforces the rules of hooks as specified by the React team. It helps to prevent common mistakes and inconsistencies when using hooks. It also helps to make sure that hooks are only used in functional components and that they are called in correct order.
