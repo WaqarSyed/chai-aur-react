@@ -577,4 +577,13 @@ React Native uses a subset of React and provides platform-specific components an
 
 ## 98. What is state mutation and how to prevent it?
 
-- State mutation is when the current state is modified directly, instead of creating a new state object. This can make it difficult to track changes and can lead to unexpected behavior . To prevent state mutation , you should use the spread operator or object.assign() to create a new state object and only update the properties that need to be changed.
+- State mutation is when the current state is modified directly, instead of creating a new state object. This can make it difficult to track changes and can lead to unexpected behavior . To prevent state mutation , you should use the spread operator or **object.assign()** to create a new state object and only update the properties that need to be changed.
+
+## 99. What are the benefits of using typescript with React?
+
+- Using TypeScript with React can provide the following benefits:
+
+  - Improved code quality and maintainability
+  - Better type checking and fewer runtime errors
+  - Improved developer experience with autocompletion and better error messages
+  - Better documentation and understanding of the codebase
