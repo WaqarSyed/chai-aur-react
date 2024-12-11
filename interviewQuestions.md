@@ -636,3 +636,7 @@ React Native uses a subset of React and provides platform-specific components an
 - **reset** : For resetting the form to its initial state.
 - **button** : A clickable button (not associated with the form submission).
 - **textarea** : For multi-line text input ( not an input type but essential for forms).
+
+## 2. What are Web Components , and how are they implemented?
+
+- Web Components are a set of technologies that allow developers to create reusable, encapsulated custom elements for web applications. They are framework-agnostic, meaning they work in any framework or even plain HTML/JavaScript.
