@@ -640,3 +640,13 @@ React Native uses a subset of React and provides platform-specific components an
 ## 2. What are Web Components , and how are they implemented?
 
 - Web Components are a set of technologies that allow developers to create reusable, encapsulated custom elements for web applications. They are framework-agnostic, meaning they work in any framework or even plain HTML/JavaScript.
+
+## 3. What are meta tags, and how do they influence webpage behavior?
+
+- Meta tags are small pieces of HTML code that provide information about a webpage(metadata) to browsers, search engines and other services. They are placed in the _head_ section of an HTML document.
+
+  - Improve SEO (Search Engine Optimization)
+  - Control Page Display and Behavior
+  - Specify Author or Keywords
+  - Control Browser Behavior
+  - Social Media Integration
