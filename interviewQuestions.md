@@ -591,3 +591,48 @@ React Native uses a subset of React and provides platform-specific components an
 ## 100. What is the purpose of **eslint** plugin for hooks?
 
 - The ESlint plugin for hooks is a set of rules that enforces the rules of hooks as specified by the React team. It helps to prevent common mistakes and inconsistencies when using hooks. It also helps to make sure that hooks are only used in functional components and that they are called in correct order.
+
+# HTML
+
+## 1. What are the different types of input fields available in HTML5 forms?
+
+- HTML5 introduced various types of input fields to enhance form handling and user experience. Here's a list of most common input types:
+
+### Textual Input Fields
+
+- **text** : A simple one-line text input field.
+- **email** : For email addresses ; validates input for proper email format.
+- **password** : Input for passwords ; characters are masked.
+- **url** : For URLs ; validates for proper URL format.
+- **tel** : For telephone numbers ; no standard format validation.
+- **number** : For numeric input ; includes arrows for incrementing or decrementing.
+- **search** : Input optimized for search terms.
+
+### Selection Input Fields
+
+- **checkbox** : For multiple options selection.
+- **radio** : For selecting one option from a group.
+- **select** : A dropdown list (not an input type but part of forms)
+
+### Date and Time Input Fields
+
+- **date** : For selecting a date
+- **time** : For selecting a time
+- **datetime-local** : For selecting both date and time (local timezone)
+- **month** : For selecting a month and year
+- **week** : For selecting a week and year
+
+### File and Media Input Fields
+
+- **file** : For uploading files.
+- **image** : For submitting images as buttons.
+- **color** : For selecting a color using color picker.
+
+### Specialized Input Fields
+
+- **range** : For selecting a numeric value within a range using a slider.
+- **hidden** : An input not visible to the user (useful for hidden data).
+- **submit** : For submitting the form.
+- **reset** : For resetting the form to its initial state.
+- **button** : A clickable button (not associated with the form submission).
+- **textarea** : For multi-line text input ( not an input type but essential for forms).
