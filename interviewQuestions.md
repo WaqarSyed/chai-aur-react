@@ -818,3 +818,62 @@ React Native uses a subset of React and provides platform-specific components an
 - Enhanced Readability and Maintenance
 - Standards Compliance
 - Improved Browser Behavior
+
+## 8. What is the difference between data-attributes and custom attributes?
+
+- HTML attributes are key-value pairs used to store additional information on an element. Two common types are data attributes and custom attributes. Here's how they differ:
+
+### 1. Data Attributes
+
+- Data attributes are predefined attributes in HTML5 that allow embedding custom data into HTML elements. They must follow a specific naming convention and start with data-.
+
+#### Syntax :
+
+```html
+<div data-key="value"></div>
+```
+
+#### Purpose :
+
+- To store custom data that can be accessed via JavaScript.
+- Useful for embedding metadata in HTML elements without affecting their appearance.
+
+#### Access in JavaScript :
+
+```javascript
+const div = document.querySelector("div");
+console.log(div.dataset.key); // Output: "value"
+```
+
+#### Advantages :
+
+- Recognized by browsers, ensuring proper handling.
+- Easy access through the dataset property.
+- Ensures the separation of concerns (HTML for structure, JavaScript for behavior).
+
+### 2. Custom Attributes
+
+- Custom attributes are arbitrary attributes added to HTML elements without using the data- prefix. They don’t have any special treatment or recognition by browsers.
+
+#### Syntax :
+
+```html
+<div custom-key="value"></div>
+```
+
+#### Purpose :
+
+- Can be used for specific purposes in custom setups or frameworks.
+- Typically discouraged unless working in a closed or controlled environment.
+
+#### Access in JavaScript :
+
+```javascript
+const div = document.querySelector("div");
+console.log(div.getAttribute("custom-key")); // Output: "value"
+```
+
+#### Disadvantages :
+
+- Not standardized and can lead to conflicts or unexpected behavior in the DOM.
+- No special handling or built-in API like dataset.
