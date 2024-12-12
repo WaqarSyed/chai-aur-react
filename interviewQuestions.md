@@ -771,3 +771,22 @@ React Native uses a subset of React and provides platform-specific components an
   }
 }
 ```
+
+## 6. What is the purpose of DOCTYPE declaration?
+
+- DOCTYPE declaration in HTML serves as an instruction to the web browser about the version of HTML the webpage is written in . It ensures the browser renders the page correctly by using the appropriate standards.
+
+### Key Purposes of DOCTYPE Declaration :
+
+- The DOCTYPE declaration ensures that the browser operates in standards mode, where it adheres to web standards for rendering.
+  Without a DOCTYPE or with an incorrect one, the browser might switch to quirks mode, which tries to emulate non-standard behavior for older, non-compliant web pages.
+
+- Specifies the HTML Version
+
+- Helps maintain cross-browser consistency by encouraging the use of modern web standards.
+
+```html
+<!DOCTYPE html>
+```
+
+- This tells the browser to render the page in standards mode using the HTML5 specification.
