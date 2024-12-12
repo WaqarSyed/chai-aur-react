@@ -727,3 +727,47 @@ React Native uses a subset of React and provides platform-specific components an
   <button type="submit">Submit</button>
 </form>
 ```
+
+## 5. How do you optimize a webpage for SEO using HTML?
+
+- Optimizing a webpage for SEO (Search Engine Optimization) involves using HTML effectively to ensure your content is indexed and ranked well by search engines. Here's how you can do it:
+
+- Use Proper HTML Structure
+- Use Semantic elements like **header, footer, article, section and nav** to make your page easier for search engines to understand.
+- Include Meta Tags
+- Add a descriptive and keyword-rich **title** tag for each page.
+- Use the **description** tag for a concise summary of the page.
+- Ensure the page is mobile-friendly with **viewport**.
+
+```HTML
+        <head>
+
+      <title>Learn SEO Optimization | My Blog</title>
+      <meta name="description" content="Discover how to optimize your website for better search engine rankings.">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+```
+
+- Use descriptive filenames and **alt** attributes for images.
+- Compress images to improve page loading speed.
+- Use the **srcset** attribute for responsive images.
+- Keep URLs short, descriptive, and include keywords.
+- Avoid using special characters or long query strings.
+- Minimize HTML, CSS, and JavaScript.
+- Use lazy loading for images and videos.
+- Enable caching and use a Content Delivery Network (CDN).
+- Link to other pages on your site using descriptive anchor text.
+- Include high-quality external links for credibility.
+- Use proper **label** elements for forms.
+- Ensure keyboard and screen-reader compatibility.
+- Ensure the site is responsive with the meta viewport tag.
+- Use **media queries** in your CSS for different screen sizes.
+
+```css
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+```
