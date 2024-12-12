@@ -790,3 +790,31 @@ React Native uses a subset of React and provides platform-specific components an
 ```
 
 - This tells the browser to render the page in standards mode using the HTML5 specification.
+
+## 7. What are semantic HTML tags, and why are they important?
+
+- Semantic HTML tags are HTML elements that clearly describe their meaning and purpose both to the browser and to developers. These tags provide more meaningful content structure and improve the readability of code.
+- Unlike non-semantic tags like _div_ or _span_, semantic tags give a clear indication of the role or type of content they contain.
+
+### Examples of Semantic HTML Tags
+
+- **header**: Represents introductory content or navigation links.
+- **nav**: Represents a navigation menu.
+- **main**: Represents the main content of the document.
+- **section**: Groups related content.
+- **article**: Represents independent, self-contained content like a blog post.
+- **aside**: Represents content related to the main content (like a sidebar).
+- **footer**: Represents footer content of a page or section.
+
+- **strong**: Indicates strong importance, typically bold.
+- **em**: Indicates emphasis, typically italic.
+- **mark**: Highlights text.
+- **time**: Represents a specific time or date.
+
+### Importance of Semantic Tags :
+
+- Improved Accessibility
+- Better SEO
+- Enhanced Readability and Maintenance
+- Standards Compliance
+- Improved Browser Behavior
