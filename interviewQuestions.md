@@ -650,3 +650,80 @@ React Native uses a subset of React and provides platform-specific components an
   - Specify Author or Keywords
   - Control Browser Behavior
   - Social Media Integration
+
+## 4. How can you create an accessible form in HTML?
+
+- Creating an accessible form in HTML ensures that all users, including those with disabilities , can interact with the form effectively. This involves using semantic HTML , proper labeling and accessibility features.
+
+### Key Features of an accessible form :
+
+- **Labels:** Associate each input with a descriptive label
+- **Fieldset and Legend:** Group related inputs together for better context.
+- **ARIA Attributes:** Use for additional accessibility when needed.
+- **Keyboard Accessibility:** Ensure all fields are navigable via keyboard.
+- **Validation and Error Messages:** Provide meaningful feedback.
+
+### Example :
+
+```html
+<form action="/submit" method="POST">
+  <!-- Fieldset for grouping -->
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <!-- Label associated with input -->
+    <label for="name">Name:</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      aria-required="true"
+      aria-describedby="nameHelp"
+    />
+    <small id="nameHelp">Enter your full name</small>
+
+    <br /><br />
+
+    <label for="email">Email:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+      aria-required="true"
+      aria-describedby="emailHelp"
+    />
+    <small id="emailHelp">Example: yourname@example.com</small>
+
+    <br /><br />
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" aria-required="true" />
+  </fieldset>
+
+  <br />
+
+  <!-- Grouping radio buttons -->
+  <fieldset>
+    <legend>Gender</legend>
+    <label>
+      <input type="radio" name="gender" value="male" />
+      Male
+    </label>
+    <label>
+      <input type="radio" name="gender" value="female" />
+      Female
+    </label>
+    <label>
+      <input type="radio" name="gender" value="other" />
+      Other
+    </label>
+  </fieldset>
+
+  <br />
+
+  <!-- Submit button -->
+  <button type="submit">Submit</button>
+</form>
+```
