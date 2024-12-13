@@ -1113,3 +1113,70 @@ import { name, greet } from "./module.js";
 ```javascript
 import greet from "./module.js";
 ```
+
+## 5. What is the purpose of the this keyword in JavaScript?
+
+- The **this** keyword refers to the object that is currently executing the function.
+- Its value depends on how and where the function is called.
+
+### Common Scenarios :
+
+#### 1.Global Context
+
+- In the global scope, this refers to the global object (window in browsers).
+
+```javascript
+console.log(this); // Window
+```
+
+#### 2.Inside an Object
+
+- Refers to the owning object
+
+```javascript
+const obj = {
+  name: "John",
+  greet() {
+    console.log(this.name); // "John"
+  },
+};
+obj.greet();
+```
+
+#### 3.In a Constructor Function
+
+- Refers to the newly created object
+
+```javascript
+function Person(name) {
+  this.name = name;
+}
+const person = new Person("John");
+console.log(person.name); // "John"
+```
+
+#### 4.In an Event Listener
+
+- Refers to the element that triggered the event.
+
+```javascript
+document.querySelector("button").addEventListener("click", function () {
+  console.log(this); // <button>
+});
+```
+
+#### 5.Arrow Functions
+
+- In arrow functions , **this** is lexically bound and refers to the surrounding context.
+
+```javascript
+const obj = {
+  name: "John",
+  greet: () => {
+    console.log(this.name); // Undefined (global context)
+  },
+};
+obj.greet();
+```
+
+- **this** _provides dynamic context, making it crucial for working with objects, event handlers, and constructors. Its value depends on how the function is invoked._
