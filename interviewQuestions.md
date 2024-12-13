@@ -1051,3 +1051,13 @@ p:nth-of-type(2) {
   - It indicates the absence of a value.
 - Represents the intentional absence of any object value.
   - It is an object type with a value of **null**.
+
+## 2. What is the difference between synchronous and asynchronous programming?
+
+- **Synchronous:** Blocking, sequential execution.
+- **Asynchronous:** Non-blocking, allows multitasking (e.g., using setTimeout, Promises, or async/await).
+
+## 3. Explain the concept of Event bubbling and Event capturing?
+
+- **Event Bubbling:** The event starts from the target element and propagates upward to its ancestors.
+- **Event Capturing:** The event starts from the topmost ancestor and propagates downward to the target element.Enable it by setting the third parameter of addEventListener to true.
