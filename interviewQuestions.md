@@ -1042,3 +1042,12 @@ p:nth-of-type(2) {
 ```
 
 - **nth-child() counts all sibling elements, while nth-of-type() counts only sibling elements of the same type.**
+
+# JavaScript Questions
+
+## 1. Explain the difference between undefined and null in JavaScript?
+
+- A variable that is declared but not assigned a value is **undefined**.
+  - It indicates the absence of a value.
+- Represents the intentional absence of any object value.
+  - It is an object type with a value of **null**.
