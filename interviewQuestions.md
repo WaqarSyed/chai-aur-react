@@ -1061,3 +1061,55 @@ p:nth-of-type(2) {
 
 - **Event Bubbling:** The event starts from the target element and propagates upward to its ancestors.
 - **Event Capturing:** The event starts from the topmost ancestor and propagates downward to the target element.Enable it by setting the third parameter of addEventListener to true.
+
+## 4. What are modules in JavaScript, and how do import and export work?
+
+### Modules in JavaScript :
+
+- Modules are reusable pieces of JavaScript code that can be imported or exported between files.
+- They promote code organization and reusability.
+
+### Export :
+
+- Used to make variables, functions, or classes available to other files.
+
+#### 1. Named Export :
+
+- Export multiple items
+
+```javascript
+export const name = "John";
+export function greet() {
+  console.log("Hello!");
+}
+```
+
+#### 2. Default Export :
+
+- Export a single default item
+
+```javascript
+export default function greet() {
+  console.log("Default Greeting!");
+}
+```
+
+### Import :
+
+- Used to bring exported items into another file.
+
+#### 1. Named Import :
+
+- Use the same name as exported.
+
+```javascript
+import { name, greet } from "./module.js";
+```
+
+#### 2. Default Import :
+
+- No need to match the name
+
+```javascript
+import greet from "./module.js";
+```
