@@ -592,7 +592,7 @@ React Native uses a subset of React and provides platform-specific components an
 
 - The ESlint plugin for hooks is a set of rules that enforces the rules of hooks as specified by the React team. It helps to prevent common mistakes and inconsistencies when using hooks. It also helps to make sure that hooks are only used in functional components and that they are called in correct order.
 
-# HTML
+# HTML Questions
 
 ## 1. What are the different types of input fields available in HTML5 forms?
 
@@ -877,3 +877,168 @@ console.log(div.getAttribute("custom-key")); // Output: "value"
 
 - Not standardized and can lead to conflicts or unexpected behavior in the DOM.
 - No special handling or built-in API like dataset.
+
+# CSS Questions
+
+## 1. Explain the difference between relative, absolute, fixed and sticky positioning in CSS?
+
+## 2. How does the z-index property work, and how is it used?
+
+- The z-index property in CSS controls the stacking order of elements along the z-axis(perpendicular to the screen). Elements with higher z-index values are displayed in front of those with lower values.
+
+- **Works with Positioned Elements:** Only applies to elements with position: relative, absolute, fixed, or sticky.
+- **Higher Value = On Top:** Elements with greater z-index overlap those with smaller values.
+- **Default Value:** The default z-index is auto, which follows the stacking order of the DOM.
+- **Stacking Contexts:** A new stacking context is created when an element has a z-index or specific properties like opacity (<1), transform, or filter.
+
+```css
+.box1 {
+  position: relative;
+  z-index: 1; /* Lower layer */
+}
+.box2 {
+  position: relative;
+  z-index: 10; /* Higher layer */
+}
+```
+
+- In this example, .box2 appears on top of .box1.
+
+## 3. What are CSS Grid and Flexbox , and how do they differ?
+
+### CSS Grid :
+
+- A 2D layout system for designing web layouts both rows and columns.
+- Ideal for creating entire page layouts or complex grid-based designs.
+
+```css
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto;
+```
+
+### CSS Flexbox :
+
+- A 1D layout system for arranging items in a row or column.
+- Best for aligning and distributing space within a container.
+
+```css
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+```
+
+## 4. How can you implement a responsive design using CSS?
+
+### To Implement a Responsive Design in CSS :
+
+- **1.Use Relative Units**
+  - Instead of fixed units like px, use em, rem, %, or vw/vh for flexible layouts.
+- **2.Media Queries**
+  - Adjust styles based on screen size or device characteristics.
+- **3.Flexible Layouts**
+  - Use Flexbox or CSS Grid for layouts that adapt to screen size.
+- **4.Viewport Meta Tag (for mobile devices)**
+  - Ensure proper scaling on mobile devices.
+- **5.Responsive Images**
+  - Use max-width: 100% for images to scale with container size.
+
+## 5. How does the box-sizing property affect element sizing?
+
+- The box-sizing property in CSS determines how the total width and height of an element are calculated.
+
+### Values :
+
+#### 1. content-box (default):
+
+- The width and height only apply to the content area.
+- Padding and border are added outside the width and height , increasing the total size of the element.
+
+```css
+div {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid;
+}
+```
+
+- The total width will be 200px + 40px (padding) + 10px (border) = 250px.
+
+#### 2. border-box :
+
+- The width and height include the padding and border within the element's size.
+- The element's total size remains the specified width/height , regardless of padding and border.
+
+```css
+div {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid;
+  box-sizing: border-box;
+}
+```
+
+- The total width remains 200px, including padding and border.
+
+- **content-box adds padding and border to the element’s width/height, while border-box includes them within the specified width/height.**
+
+## 6. How do CSS variables (custom properties) work?
+
+- CSS variables allow you to store reusable values and apply them throughout your CSS.
+
+### Syntax :
+
+#### 1. Define a variable :
+
+```css
+:root {
+  --primary-color: #3498db;
+  --font-size: 16px;
+}
+```
+
+#### 2. Use the variable :
+
+```css
+body {
+  color: var(--primary-color);
+  font-size: var(--font-size);
+}
+```
+
+### Key Features :
+
+- **Global Scope**: Variables defined under :root are globally accessible.
+- **Local Scope**: Variables can be scoped to a specific element.
+- **Dynamic**: Variables can be updated with JavaScript or within media queries.
+
+### Benefits :
+
+- **Maintainability**: Easier to manage and update values in one place.
+- **Reusability**: Reuse values consistently across your stylesheets.
+
+## 7. What is the difference between nth-child() and nth-of-type()?
+
+### 1. nth-child():
+
+- Selects an element based on its position among all sibling elements, regardless of type.
+- **Example:** Selects every second child element:
+
+```css
+li:nth-child(2) {
+  color: red;
+}
+```
+
+### 2. nth-of-child():
+
+- Selects an element based on its position among sibling elements of the same type.
+- **Example:** Selects the second **p** element:
+
+```css
+p:nth-of-type(2) {
+  color: blue;
+}
+```
+
+- **nth-child() counts all sibling elements, while nth-of-type() counts only sibling elements of the same type.**
