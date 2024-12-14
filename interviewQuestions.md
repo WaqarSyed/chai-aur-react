@@ -1225,3 +1225,33 @@ window.addEventListener("scroll", log);
 
 - **Debounce**: Delays execution until no repeated calls occur within a delay period.
 - **Throttle**: Limits execution to at most once every interval, regardless of calls.
+
+## 7. What is the difference between deep copy and shallow copy in JavaScript?
+
+### 1.Shallow Copy
+
+- Copies only the first level of an object or array.
+- Nested objects/arrays are referenced, not duplicated.
+- Changes to nested objects affect both the original and the copy.
+
+```javascript
+const original = { name: "John", address: { city: "NY" } };
+const shallowCopy = { ...original };
+shallowCopy.address.city = "LA";
+console.log(original.address.city); // "LA" (affected)
+```
+
+### 2.Deep Copy
+
+- Creates a completely independent copy of the object, including all nested objects/arrays.
+- Changes to the copy do not affect the original.
+
+```javascript
+const original = { name: "John", address: { city: "NY" } };
+const deepCopy = JSON.parse(JSON.stringify(original));
+deepCopy.address.city = "LA";
+console.log(original.address.city); // "NY" (unaffected)
+```
+
+- **Shallow Copy: References nested structures, causing shared modifications.**
+- **Deep Copy: Fully duplicates the object, preventing shared modifications.**
