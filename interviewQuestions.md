@@ -1180,3 +1180,48 @@ obj.greet();
 ```
 
 - **this** _provides dynamic context, making it crucial for working with objects, event handlers, and constructors. Its value depends on how the function is invoked._
+
+## 6. How do you debounce or throttle functions in JavaScript?
+
+### 1.Debouncing :
+
+- Ensures a function executes after a specific delay and resets the timer if called again within that delay.
+
+- **Use Case** : Reducing API calls while typing.
+
+```javascript
+function debounce(func, delay) {
+  let timer;
+  return function (...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => func.apply(this, args), delay);
+  };
+}
+
+const log = debounce(() => console.log("Debounced!"), 300);
+window.addEventListener("resize", log);
+```
+
+### 2.Throttling :
+
+- Ensures a function executes at most once in a specified interval, even if called repeatedly.
+- **Use Case**: Handling scroll events.
+
+```javascript
+function throttle(func, interval) {
+  let lastCall = 0;
+  return function (...args) {
+    const now = Date.now();
+    if (now - lastCall >= interval) {
+      lastCall = now;
+      func.apply(this, args);
+    }
+  };
+}
+
+const log = throttle(() => console.log("Throttled!"), 300);
+window.addEventListener("scroll", log);
+```
+
+- **Debounce**: Delays execution until no repeated calls occur within a delay period.
+- **Throttle**: Limits execution to at most once every interval, regardless of calls.
