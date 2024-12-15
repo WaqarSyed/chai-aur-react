@@ -1288,3 +1288,41 @@ obj = null; // Now eligible for garbage collection (unreachable)
 ```
 
 - **JavaScript automatically clears unused memory to optimize performance, but you should write clean code to prevent memory leaks.**
+
+## 9. What is the difference between apply(), call() and bind()?
+
+### call():
+
+- Invokes a function immediately and allows passing arguments individually.
+- Syntax: function.call(thisArg, arg1, arg2, ...)
+
+```javascript
+function greet(greeting) {
+  console.log(`${greeting}, ${this.name}`);
+}
+greet.call({ name: "John" }, "Hello"); // Output: Hello, John
+```
+
+### apply():
+
+- Similar to call(), but arguments are passed as an array.
+- Syntax: function.apply(thisArg, [arg1, arg2, ...])
+
+```javascript
+greet.apply({ name: "John" }, ["Hello"]); // Output: Hello, John
+```
+
+### bind():
+
+- Returns a new function with a bound this context and optional arguments.
+- Does not invoke the function immediately.
+- Syntax: function.bind(thisArg, arg1, arg2, ...)
+
+```javascript
+const boundGreet = greet.bind({ name: "John" }, "Hello");
+boundGreet(); // Output: Hello, John
+```
+
+- **call(): Invokes immediately, arguments passed individually.**
+- **apply(): Invokes immediately, arguments passed as an array.**
+- **bind(): Creates a new function, invoked later.**
