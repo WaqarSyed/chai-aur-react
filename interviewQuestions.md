@@ -1255,3 +1255,36 @@ console.log(original.address.city); // "NY" (unaffected)
 
 - **Shallow Copy: References nested structures, causing shared modifications.**
 - **Deep Copy: Fully duplicates the object, preventing shared modifications.**
+
+## 8.How JavaScript Manages Memory (Garbage Collection)?
+
+### 1.Memory Allocation:
+
+- JavaScript allocates memory when variables, objects, or functions are created.
+
+### 2.Garbage Collection:
+
+- JavaScript automatically frees memory that is no longer used.
+- It uses the mark-and-sweep algorithm:
+  - Objects that are still reachable (accessible from the code) are kept.
+  - Unreachable objects (not referenced anywhere) are removed from memory.
+
+### 3.Reachable Objects:
+
+- Objects are reachable if:
+
+  - They can be accessed from the global scope.
+  - They are part of a function or closure.
+  - They are referenced by another object.
+
+### 4.Avoid Memory Leaks:
+
+- Remove unused variables by setting them to null.
+- Be cautious of circular references, where objects reference each other.
+
+```javascript
+let obj = { name: "John" }; // Allocated in memory
+obj = null; // Now eligible for garbage collection (unreachable)
+```
+
+- **JavaScript automatically clears unused memory to optimize performance, but you should write clean code to prevent memory leaks.**
