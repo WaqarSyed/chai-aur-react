@@ -1448,3 +1448,7 @@ fetchData();
 ## 4. What kind of API function is supported by Node.js?
 
 - Node.js supports asynchronous, non-blocking APIs by default but also provides blocking APIs when needed. These APIs enable Node.js to handle tasks like file I/O, networking, and event-driven programming efficiently.
+
+## 5. What is a module in Node.js?
+
+- A module in Node.js is a block of code that provides a specific functionality, which can be reused across different parts of an application.
