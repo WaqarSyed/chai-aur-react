@@ -1430,3 +1430,9 @@ fetchData();
 
 - **Promises provide a flexible way to handle asynchronous operations.**
 - **Async/Await simplifies promise handling, making code more readable and easier to debug.**
+
+# Node Questions
+
+## 1. What is Node.js?
+
+- Node.js is a JavaScript engine used for executing JavaScript code outside the browser, commonly used to build scalable backend applications.
