@@ -1440,3 +1440,7 @@ fetchData();
 ## 2. What is the difference between Node.js and JavaScript?
 
 - JavaScript is a scripting language, while Node.js is a runtime environment that allows JavaScript to run on the server side.
+
+## 3. Is Node.js single-threaded?
+
+- Yes, Node.js is single-threaded but uses event-driven architecture and non-blocking I/O to handle multiple requests efficiently.
