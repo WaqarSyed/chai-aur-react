@@ -1444,3 +1444,7 @@ fetchData();
 ## 3. Is Node.js single-threaded?
 
 - Yes, Node.js is single-threaded but uses event-driven architecture and non-blocking I/O to handle multiple requests efficiently.
+
+## 4. What kind of API function is supported by Node.js?
+
+- Node.js supports asynchronous, non-blocking APIs by default but also provides blocking APIs when needed. These APIs enable Node.js to handle tasks like file I/O, networking, and event-driven programming efficiently.
