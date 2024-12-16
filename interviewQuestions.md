@@ -1389,3 +1389,44 @@ document.querySelector("#parent").addEventListener("click", (event) => {
 - Simplifies managing multiple child elements.
 
 - **Event Delegation leverages event bubbling to efficiently handle events for multiple child elements using a single parent listener.**
+
+## 12.What are promises and how do they differ from async/await?
+
+- Promises represent a value that may be available now, in the future, or never (asynchronous operation result).
+- They have three states: Pending, Resolved (fulfilled), or Rejected.
+
+### Syntax :
+
+```javascript
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("Success"), 1000);
+});
+
+promise
+  .then((result) => console.log(result)) // "Success"
+  .catch((error) => console.error(error));
+```
+
+### Async/await :
+
+- Async/Await is syntactic sugar built on promises to write asynchronous code in a cleaner, synchronous style.
+- **async** makes a function return a promise.
+- **await** pauses execution until the promise resolves or rejects.
+
+#### Syntax :
+
+```javascript
+async function fetchData() {
+  try {
+    const result = await promise;
+    console.log(result); // "Success"
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+fetchData();
+```
+
+- **Promises provide a flexible way to handle asynchronous operations.**
+- **Async/Await simplifies promise handling, making code more readable and easier to debug.**
