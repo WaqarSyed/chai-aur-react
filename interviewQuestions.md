@@ -1452,3 +1452,7 @@ fetchData();
 ## 5. What is a module in Node.js?
 
 - A module in Node.js is a block of code that provides a specific functionality, which can be reused across different parts of an application.
+
+## 6. What is npm and its advantages?
+
+- Npm is the default package manager for Node.js, offering benefits like dependency management , version control and a centralized repository.
