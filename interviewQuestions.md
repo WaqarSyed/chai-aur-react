@@ -1326,3 +1326,27 @@ boundGreet(); // Output: Hello, John
 - **call(): Invokes immediately, arguments passed individually.**
 - **apply(): Invokes immediately, arguments passed as an array.**
 - **bind(): Creates a new function, invoked later.**
+
+## 10.Explain the concept of Closures in JavaScript with an example.
+
+- A closure is a function that "remembers" the variables from its outer scope even after the outer function has finished executing.
+
+- Closures allow functions to access their lexical environment.
+- Useful for creating private variables or maintaining state.
+
+```javascript
+function outerFunction() {
+  let count = 0; // Variable in outer scope
+
+  return function innerFunction() {
+    count++; // Accessing outer variable
+    console.log(`Count: ${count}`);
+  };
+}
+
+const counter = outerFunction();
+counter(); // Output: Count: 1
+counter(); // Output: Count: 2
+```
+
+- **Closures allow a function to "remember" its outer scope, making it powerful for encapsulation and maintaining state.**
