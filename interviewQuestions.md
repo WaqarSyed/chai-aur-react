@@ -1436,3 +1436,7 @@ fetchData();
 ## 1. What is Node.js?
 
 - Node.js is a JavaScript engine used for executing JavaScript code outside the browser, commonly used to build scalable backend applications.
+
+## 2. What is the difference between Node.js and JavaScript?
+
+- JavaScript is a scripting language, while Node.js is a runtime environment that allows JavaScript to run on the server side.
