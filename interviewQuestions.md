@@ -1350,3 +1350,42 @@ counter(); // Output: Count: 2
 ```
 
 - **Closures allow a function to "remember" its outer scope, making it powerful for encapsulation and maintaining state.**
+
+## 11.How does Event Delegation work, and why is it useful?
+
+- Event Delegation is a technique where you attach a single event listener to a parent element to manage events for its child elements.
+
+### How it works:
+
+- Events in JavaScript bubble up from the target element to its ancestors.
+- Instead of adding listeners to each child, you add one to the parent and use the event's target property to determine which child triggered the event.
+
+```javascript
+document.querySelector("#parent").addEventListener("click", (event) => {
+  if (event.target.tagName === "BUTTON") {
+    console.log(`Button clicked: ${event.target.textContent}`);
+  }
+});
+
+// HTML:
+// <div id="parent">
+//   <button>Button 1</button>
+//   <button>Button 2</button>
+// </div>
+```
+
+### Why its useful :
+
+#### 1.Improves Performance:
+
+- Reduces the number of event listeners, especially for dynamically created elements.
+
+#### 2.Handles Dynamic Elements:
+
+- Works for elements added to the DOM after the parent listener is attached.
+
+#### 3.Cleaner Code:
+
+- Simplifies managing multiple child elements.
+
+- **Event Delegation leverages event bubbling to efficiently handle events for multiple child elements using a single parent listener.**
