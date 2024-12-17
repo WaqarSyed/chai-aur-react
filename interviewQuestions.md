@@ -1456,3 +1456,7 @@ fetchData();
 ## 6. What is npm and its advantages?
 
 - Npm is the default package manager for Node.js, offering benefits like dependency management , version control and a centralized repository.
+
+## 7. What is middleware?
+
+- Middleware functions execute between the request and response cycle, performing tasks like logging, authentication, and data processing.
