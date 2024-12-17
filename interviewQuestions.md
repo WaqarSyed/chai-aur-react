@@ -1460,3 +1460,7 @@ fetchData();
 ## 7. What is middleware?
 
 - Middleware functions execute between the request and response cycle, performing tasks like logging, authentication, and data processing.
+
+## 8. How does Node.js handle concurrency despite being single-threaded?
+
+- Node.js handles concurrency through asynchronous non-blocking operations, allowing multiple tasks to run simultaneously within a single thread.
