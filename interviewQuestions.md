@@ -1472,3 +1472,7 @@ fetchData();
 ## 10. What do you mean by event loop in Node.js?
 
 - The event loop is a mechanism that processes asynchronous tasks in a single thread by continously checking for and executing callback functions.
+
+## 11. What are the main disadvantages of Node.js?
+
+- Disadvantages include its single-threaded nature, preference for NoSQL databases, and rapid API changes that can cause instability.
