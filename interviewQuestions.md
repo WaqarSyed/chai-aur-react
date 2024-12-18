@@ -1480,3 +1480,7 @@ fetchData();
 ## 12. What is REPL in Node.js?
 
 - REPL stands for Read, Evaluate , Print and Loop ; it's an interactive environment for executing Node.js code and debugging.
+
+## 13. How to import a module in Node.js?
+
+- Use the 'require()' function to import external modules, storing the result in a variable for use in the application.
