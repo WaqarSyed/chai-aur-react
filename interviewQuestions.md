@@ -1468,3 +1468,7 @@ fetchData();
 ## 9. What is control flow in Node.js?
 
 - control flow refers to the order in which code statements and functions are executed , managing asynchronous operations and error handling.
+
+## 10. What do you mean by event loop in Node.js?
+
+- The event loop is a mechanism that processes asynchronous tasks in a single thread by continously checking for and executing callback functions.
