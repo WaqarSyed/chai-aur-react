@@ -1464,3 +1464,7 @@ fetchData();
 ## 8. How does Node.js handle concurrency despite being single-threaded?
 
 - Node.js handles concurrency through asynchronous non-blocking operations, allowing multiple tasks to run simultaneously within a single thread.
+
+## 9. What is control flow in Node.js?
+
+- control flow refers to the order in which code statements and functions are executed , managing asynchronous operations and error handling.
