@@ -1476,3 +1476,7 @@ fetchData();
 ## 11. What are the main disadvantages of Node.js?
 
 - Disadvantages include its single-threaded nature, preference for NoSQL databases, and rapid API changes that can cause instability.
+
+## 12. What is REPL in Node.js?
+
+- REPL stands for Read, Evaluate , Print and Loop ; it's an interactive environment for executing Node.js code and debugging.
