@@ -1492,3 +1492,7 @@ fetchData();
 ## 15. What is package.json in Node.js?
 
 - 'package.json' is a metadata file in Node.js that contains information about the project, such as dependencies, scripts, and version.
+
+## 16. What is the most popular Node.js framework used these days?
+
+- The most popular Node.js framework is Express.js, known for its scalability and minimalistic approach to building web applications.
