@@ -1496,3 +1496,7 @@ fetchData();
 ## 16. What is the most popular Node.js framework used these days?
 
 - The most popular Node.js framework is Express.js, known for its scalability and minimalistic approach to building web applications.
+
+## 17. What are promises in Node.js?
+
+- Promises in Node.js are objects that handle asynchronous operations, providing a cleaner alternative to callback functions.
