@@ -1488,3 +1488,7 @@ fetchData();
 ## 14. What is the difference between Node.js and AJAX?
 
 - Node.js is a server-side runtime environment, while AJAX is a client-side technique for asynchronously updating parts of a web page.
+
+## 15. What is package.json in Node.js?
+
+- 'package.json' is a metadata file in Node.js that contains information about the project, such as dependencies, scripts, and version.
