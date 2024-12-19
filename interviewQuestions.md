@@ -1484,3 +1484,7 @@ fetchData();
 ## 13. How to import a module in Node.js?
 
 - Use the 'require()' function to import external modules, storing the result in a variable for use in the application.
+
+## 14. What is the difference between Node.js and AJAX?
+
+- Node.js is a server-side runtime environment, while AJAX is a client-side technique for asynchronously updating parts of a web page.
