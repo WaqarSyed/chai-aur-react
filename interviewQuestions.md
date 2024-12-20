@@ -1512,3 +1512,7 @@ fetchData();
 ## 20. What are streams in Node.js?
 
 - Streams are objects used to handle continuous data flows, allowing for efficient reading and writing of data.
+
+## 21. Explain crypto module in Node.js?
+
+- The crypto module provides cryptographic functionality, such as encryption , decryption , and hashing of data.
