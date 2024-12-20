@@ -1508,3 +1508,7 @@ fetchData();
 ## 19. What is buffer in Node.js?
 
 - A buffer is a temporary storage space for binary data, allowing Node.js to handle raw data directly.
+
+## 20. What are streams in Node.js?
+
+- Streams are objects used to handle continuous data flows, allowing for efficient reading and writing of data.
