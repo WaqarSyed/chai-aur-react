@@ -1500,3 +1500,7 @@ fetchData();
 ## 17. What are promises in Node.js?
 
 - Promises in Node.js are objects that handle asynchronous operations, providing a cleaner alternative to callback functions.
+
+## 18. What is event-driven programming in Node.js?
+
+- Event-driven programming synchronizes multiple events using event loops and callback functions to simplify program flow.
