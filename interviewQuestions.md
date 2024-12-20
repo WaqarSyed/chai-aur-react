@@ -1504,3 +1504,7 @@ fetchData();
 ## 18. What is event-driven programming in Node.js?
 
 - Event-driven programming synchronizes multiple events using event loops and callback functions to simplify program flow.
+
+## 19. What is buffer in Node.js?
+
+- A buffer is a temporary storage space for binary data, allowing Node.js to handle raw data directly.
