@@ -1516,3 +1516,7 @@ fetchData();
 ## 21. Explain crypto module in Node.js?
 
 - The crypto module provides cryptographic functionality, such as encryption , decryption , and hashing of data.
+
+## 22. What is callback hell?
+
+- Callback hell refers to the problematic situation caused by deeply nested callbacks, making code difficult to read and maintain.
