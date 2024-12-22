@@ -1520,3 +1520,7 @@ fetchData();
 ## 22. What is callback hell?
 
 - Callback hell refers to the problematic situation caused by deeply nested callbacks, making code difficult to read and maintain.
+
+## 23. Explain the use of timers module in Node.js?
+
+- The timers module allows execution of code after a specified delay or immediately in the next event loop cycle using functions like '**setTimeout()**' and '**setImmediate()**'.
