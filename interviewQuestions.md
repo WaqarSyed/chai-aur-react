@@ -1524,3 +1524,7 @@ fetchData();
 ## 23. Explain the use of timers module in Node.js?
 
 - The timers module allows execution of code after a specified delay or immediately in the next event loop cycle using functions like '**setTimeout()**' and '**setImmediate()**'.
+
+## 24. What is the difference between setImmediate() and process.nextTick() methods?
+
+- **process.nextTick()** executes callbacks at the start of the next event loop, while **setImmediate()** executes them at the end of the current event loop.
