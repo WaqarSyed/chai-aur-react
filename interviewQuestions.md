@@ -1528,3 +1528,7 @@ fetchData();
 ## 24. What is the difference between setImmediate() and process.nextTick() methods?
 
 - **process.nextTick()** executes callbacks at the start of the next event loop, while **setImmediate()** executes them at the end of the current event loop.
+
+## 25. What is the difference between setTimout() and setImmediate() method?
+
+- **setTimeout()** schedules a callback after a specified delay, whereas **setImmediate()** executes it immediately after I/O events.
