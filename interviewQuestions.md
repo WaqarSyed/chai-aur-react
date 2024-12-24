@@ -1540,3 +1540,7 @@ fetchData();
 ## 27. Explain the use of passport module in Node.js?
 
 - The passport module adds authentication features to the applications , supporting various sign-in methods.
+
+## 28. What is fork in Node.js?
+
+- Fork is a method to create child processes that allow parallel execution of tasks in Node.js.
