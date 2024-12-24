@@ -1532,3 +1532,7 @@ fetchData();
 ## 25. What is the difference between setTimout() and setImmediate() method?
 
 - **setTimeout()** schedules a callback after a specified delay, whereas **setImmediate()** executes it immediately after I/O events.
+
+## 26. What is the difference between spawn() and fork() method?
+
+- **spawn()** runs a new process from the command line, while **fork()** creates a new instance of the existing process to perform parallel tasks.
