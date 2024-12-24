@@ -1544,3 +1544,7 @@ fetchData();
 ## 28. What is fork in Node.js?
 
 - Fork is a method to create child processes that allow parallel execution of tasks in Node.js.
+
+## 29. What are the three methods to avoid callback hell?
+
+- To avoid callback hell use 'async/await' , promises, or generators.
