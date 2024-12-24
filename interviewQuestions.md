@@ -1536,3 +1536,7 @@ fetchData();
 ## 26. What is the difference between spawn() and fork() method?
 
 - **spawn()** runs a new process from the command line, while **fork()** creates a new instance of the existing process to perform parallel tasks.
+
+## 27. Explain the use of passport module in Node.js?
+
+- The passport module adds authentication features to the applications , supporting various sign-in methods.
