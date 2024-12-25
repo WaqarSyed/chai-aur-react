@@ -1564,3 +1564,7 @@ fetchData();
 ## 33. What is a cluster in Node.js?
 
 - A **cluster** allows Node.js to utilize multiple cores of a machine by creating child processes that share the same server port.
+
+## 34. How to manage sessions in Node.js?
+
+- Sessions in Node.js can be managed using the **express-session** module , which stores the session data on the server.
