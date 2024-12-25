@@ -1560,3 +1560,7 @@ fetchData();
 ## 32. Explain the tls module in Node.js?
 
 - The **tls** module provides an implementation of TLS and SSL protocols to establish secure network connections.
+
+## 33. What is a cluster in Node.js?
+
+- A **cluster** allows Node.js to utilize multiple cores of a machine by creating child processes that share the same server port.
