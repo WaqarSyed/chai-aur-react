@@ -1548,3 +1548,7 @@ fetchData();
 ## 29. What are the three methods to avoid callback hell?
 
 - To avoid callback hell use 'async/await' , promises, or generators.
+
+## 30. What is body-parser in Node.js?
+
+- Body-parser is a middleware that parses incoming request bodies in a middleware before handling it in Node.js applications.
