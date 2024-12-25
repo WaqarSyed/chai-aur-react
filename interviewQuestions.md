@@ -1556,3 +1556,7 @@ fetchData();
 ## 31. What is CORS in Node.js?
 
 - CORS stands for Cross Origin Resource Sharing, allowing restricted resources on a web page to be requested from another domain.
+
+## 32. Explain the tls module in Node.js?
+
+- The **tls** module provides an implementation of TLS and SSL protocols to establish secure network connections.
