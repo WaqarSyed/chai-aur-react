@@ -1552,3 +1552,7 @@ fetchData();
 ## 30. What is body-parser in Node.js?
 
 - Body-parser is a middleware that parses incoming request bodies in a middleware before handling it in Node.js applications.
+
+## 31. What is CORS in Node.js?
+
+- CORS stands for Cross Origin Resource Sharing, allowing restricted resources on a web page to be requested from another domain.
