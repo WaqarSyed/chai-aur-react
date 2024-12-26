@@ -1576,3 +1576,7 @@ fetchData();
 ## 36. How can we implement authentication and authorization in Node.js?
 
 - Use packages like Passport for authentication and JWT for managing tokens to implement security in Node.js applications.
+
+## 37. Explain the packages used for file uploading in Node.js?
+
+- Multer is a popular middleware used for handling file uploads in Node.js.
