@@ -1572,3 +1572,7 @@ fetchData();
 ## 35. Explain the types of streams in Node.js?
 
 - Types of streams include readable, writable, duplex(both), and transform(modifies data) streams.
+
+## 36. How can we implement authentication and authorization in Node.js?
+
+- Use packages like Passport for authentication and JWT for managing tokens to implement security in Node.js applications.
