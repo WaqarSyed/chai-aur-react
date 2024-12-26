@@ -1568,3 +1568,7 @@ fetchData();
 ## 34. How to manage sessions in Node.js?
 
 - Sessions in Node.js can be managed using the **express-session** module , which stores the session data on the server.
+
+## 35. Explain the types of streams in Node.js?
+
+- Types of streams include readable, writable, duplex(both), and transform(modifies data) streams.
