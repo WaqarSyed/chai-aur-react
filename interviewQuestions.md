@@ -38,7 +38,7 @@
 
 ## 10. What is JSX?
 
-- JSX is a syntax extension for JavaScript that allows developers to write HTML-like elements in thir JavaScript code . It is commonly used in React to describe the structure and content of a components's user interface.
+- JSX is a syntax extension for JavaScript that allows developers to write HTML-like elements in their JavaScript code . It is commonly used in React to describe the structure and content of a components's user interface.
 
 ## 11. Can browsers read a JSX file ?
 
@@ -55,7 +55,7 @@
 
 - In React, everything is a component. A component is a small, reusable piece of code that represents a part of a User Interface.
 
-- Components can be defined as either a class or a function and can include a combination of HTML, CSS and JavaScript code. These components can also be nested and reused throughout the application, which makses it easy to manage and maintain the application's user interface.
+- Components can be defined as either a class or a function and can include a combination of HTML, CSS and JavaScript code. These components can also be nested and reused throughout the application, which makes it easy to manage and maintain the application's user interface.
 
 ## 14. What is the meaning of the component-based architecture of React?
 
@@ -99,7 +99,7 @@ State can be updated using the setState method, which triggers a re-render of th
 
 ## 22. What is children prop?
 
-- The children prop is a special prop that is used pass children elements to a component. It is used to pass elements between components, such as a list of items or a set of nested components.
+- The children prop is a special prop that is used to pass children elements to a component. It is used to pass elements between components, such as a list of items or a set of nested components.
 
 ## 23. What is a higher-order component in React?
 
@@ -1584,3 +1584,7 @@ fetchData();
 ## 38. How to handle database connection in Node.js?
 
 - Database connections in Node.js are managed using drivers like MySQL and libraries like Mongoose for MongoDB.
+
+## 39. How to read command line arguments in Node.js?
+
+- Use the process.argv array to access command-line arguments passed when running a Node.js application.
