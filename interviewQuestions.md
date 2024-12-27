@@ -1588,3 +1588,7 @@ fetchData();
 ## 39. How to read command line arguments in Node.js?
 
 - Use the process.argv array to access command-line arguments passed when running a Node.js application.
+
+## 40. What are child processes in Node.js?
+
+- Child processes allow Node.js to handle multiple tasks concurrently by creating subprocesses that can run independently.
