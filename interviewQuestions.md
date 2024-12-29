@@ -143,7 +143,7 @@ State can be updated using the setState method, which triggers a re-render of th
 
 ## 33. What is the difference between HTML and React Event Handling?
 
-- In HTML, events are handled using event attributes, such as onclick or onchange. In React, events are handled using the on keyword and a callback function. React's event handling system is more powerful and flexible than the traditioal HTML event handling system.
+- In HTML, events are handled using event attributes, such as onclick or onchange. In React, events are handled using the on keyword and a callback function. React's event handling system is more powerful and flexible than the traditional HTML event handling system.
 
 ## 34. What are synthetic events in React?
 
@@ -1592,3 +1592,17 @@ fetchData();
 ## 40. What are child processes in Node.js?
 
 - Child processes allow Node.js to handle multiple tasks concurrently by creating subprocesses that can run independently.
+
+# Coding Questions
+
+## 1. Remove duplicate elements from an Array.
+
+- To remove duplicate elements from an array using JavaScript, you can use the following approach :
+
+```javascript
+const array = [1, 4, 5, "Banana", 6, 1, 4, 4, 9, 3, "Banana"];
+
+const uniqueElements = array.filter((element, index) => {
+  return array.indexOf(element) === index;
+});
+```
