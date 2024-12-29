@@ -1606,3 +1606,19 @@ const uniqueElements = array.filter((element, index) => {
   return array.indexOf(element) === index;
 });
 ```
+
+## 2. Write a Function to generate a Fibonacci series of a given length.
+
+-
+
+```javascript
+function fibonacci(length) {
+  const fibArray = [0, 1];
+  for (let i = 2; i < length; i++) {
+    fibArray.push(fibArray[i - 1] + fibArray[i - 2]);
+  }
+  return fibArray;
+}
+const series = fibonacci(7);
+console.log(series);
+```
