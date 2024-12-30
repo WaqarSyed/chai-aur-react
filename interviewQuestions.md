@@ -1622,3 +1622,24 @@ function fibonacci(length) {
 const series = fibonacci(7);
 console.log(series);
 ```
+
+## 3. Reverse a string with inbuilt methods and without methods
+
+- Reversing string with methods
+
+```javascript
+let string = "javascript";
+let reversedString = string.split("").reverse().join("");
+console.log(reversedString);
+```
+
+- Reversing string without methods
+
+```javascript
+let string = "javascript";
+let reversedString = "";
+for (let index = string.length - 1; index >= 0; index--) {
+  reversedString += string[index];
+}
+console.log(reversedString);
+```
