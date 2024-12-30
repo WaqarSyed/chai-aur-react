@@ -1655,3 +1655,14 @@ function isPalindrome(str) {
 console.log(isPalindrome("madam")); // Output: true
 console.log(isPalindrome("hello")); // Output: false
 ```
+
+## 5. Write a function to find the factorial of a number.
+
+```javascript
+function factorial(n) {
+  if (n === 0 || n === 1) return 1;
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5)); // Output: 120
+```
