@@ -1643,3 +1643,15 @@ for (let index = string.length - 1; index >= 0; index--) {
 }
 console.log(reversedString);
 ```
+
+## 4. Implement a function to check if a string is a palindrome.
+
+```javascript
+function isPalindrome(str) {
+  const reversed = str.split("").reverse().join("");
+  return str === reversed;
+}
+
+console.log(isPalindrome("madam")); // Output: true
+console.log(isPalindrome("hello")); // Output: false
+```
