@@ -1676,3 +1676,16 @@ function flattenArray(arr) {
 
 console.log(flattenArray([1, [2, [3, [4]]]])); // Output: [1, 2, 3, 4]
 ```
+
+## 7. Write a function to find the first non-repeating character in a string.
+
+```javascript
+function firstNonRepeatingChar(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
+      return str[i];
+    }
+  }
+  return null;
+}
+```
