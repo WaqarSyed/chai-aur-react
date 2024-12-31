@@ -1666,3 +1666,13 @@ function factorial(n) {
 
 console.log(factorial(5)); // Output: 120
 ```
+
+## 6. Write a function to flatten a nested array.
+
+```javascript
+function flattenArray(arr) {
+  return arr.flat(Infinity);
+}
+
+console.log(flattenArray([1, [2, [3, [4]]]])); // Output: [1, 2, 3, 4]
+```
