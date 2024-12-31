@@ -1689,3 +1689,21 @@ function firstNonRepeatingChar(str) {
   return null;
 }
 ```
+
+## 8. Implement a debounce function.
+
+```javascript
+function debounce(func, delay) {
+  let timer;
+  return function (...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => func.apply(this, args), delay);
+  };
+}
+
+// Usage example
+const log = debounce(() => console.log("Debounced!"), 1000);
+log();
+log();
+log(); // Only the last call logs "Debounced!" after 1 second.
+```
