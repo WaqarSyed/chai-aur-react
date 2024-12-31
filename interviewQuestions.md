@@ -1707,3 +1707,23 @@ log();
 log();
 log(); // Only the last call logs "Debounced!" after 1 second.
 ```
+
+## 9. Write a function to merge two sorted arrays
+
+```javascript
+function mergeSortedArrays(arr1, arr2) {
+  let i = 0,
+    j = 0;
+  const result = [];
+  while (i < arr1.length && j < arr2.length) {
+    if (arr1[i] < arr2[j]) {
+      result.push(arr1[i++]);
+    } else {
+      result.push(arr2[j++]);
+    }
+  }
+  return result.concat(arr1.slice(i)).concat(arr2.slice(j));
+}
+
+console.log(mergeSortedArrays([1, 2, 3, 4, 5], [7, 8, 9, 10]));
+```
