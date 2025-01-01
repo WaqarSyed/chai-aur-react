@@ -1742,3 +1742,20 @@ function isSubsequence(s1, s2) {
 
 console.log(isSubsequence("abc", "ahgfdblkmnc")); // true
 ```
+
+## 11. Write a function to find majority element in an array
+
+```javascript
+function findMajorityElement(nums) {
+  const count = {};
+  const majority = Math.floor(nums.length / 2);
+
+  for (let num of nums) {
+    count[num] = (count[num] || 0) + 1;
+    if (count[num] > majority) return num;
+  }
+  return -1; // No majority element
+}
+
+console.log(findMajorityElement([3, 3, 4, 2, 3, 3])); // 3
+```
