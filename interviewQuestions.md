@@ -1727,3 +1727,18 @@ function mergeSortedArrays(arr1, arr2) {
 
 console.log(mergeSortedArrays([1, 2, 3, 4, 5], [7, 8, 9, 10]));
 ```
+
+## 10. Write a function to check if a string is a subsequence
+
+```javascript
+function isSubsequence(s1, s2) {
+  let i = 0;
+  for (let char of s2) {
+    if (char === s1[i]) i++;
+    if (i === s1.length) return true;
+  }
+  return false;
+}
+
+console.log(isSubsequence("abc", "ahgfdblkmnc")); // true
+```
