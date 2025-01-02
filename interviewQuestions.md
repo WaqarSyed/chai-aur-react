@@ -1770,3 +1770,22 @@ function rotateArray(nums, k) {
 
 console.log(rotateArray([1, 2, 3, 4, 5], 2)); // [4, 5, 1, 2, 3]
 ```
+
+## 13. Write a function to group Anagrams.
+
+```javascript
+function groupAnagrams(words) {
+  const map = new Map();
+
+  for (let word of words) {
+    const sorted = word.split("").sort().join("");
+    if (!map.has(sorted)) map.set(sorted, []);
+    map.get(sorted).push(word);
+  }
+
+  return Array.from(map.values());
+}
+
+console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
+// [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+```
