@@ -1759,3 +1759,14 @@ function findMajorityElement(nums) {
 
 console.log(findMajorityElement([3, 3, 4, 2, 3, 3])); // 3
 ```
+
+## 12. Write a function to Rotate an array.
+
+```javascript
+function rotateArray(nums, k) {
+  k %= nums.length;
+  return [...nums.slice(-k), ...nums.slice(0, -k)];
+}
+
+console.log(rotateArray([1, 2, 3, 4, 5], 2)); // [4, 5, 1, 2, 3]
+```
