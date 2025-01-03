@@ -1789,3 +1789,14 @@ function groupAnagrams(words) {
 console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
 // [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
 ```
+
+## 14. Write a function to find the missing number.
+
+```javascript
+function findMissingNumber(arr, n) {
+  let total = (n * (n + 1)) / 2;
+  let sum = arr.reduce((acc, num) => acc + num, 0);
+  return total - sum;
+}
+console.log(findMissingNumber([1, 2, 4, 5], 5));
+```
