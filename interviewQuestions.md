@@ -1800,3 +1800,47 @@ function findMissingNumber(arr, n) {
 }
 console.log(findMissingNumber([1, 2, 4, 5], 5));
 ```
+
+## 15. Implement a Basic LRU(Least Recently Used) Cache.
+
+```javascript
+class LRUCache {
+  constructor(capacity) {
+    this.capacity = capacity;
+    this.cache = new Map();
+  }
+
+  get(key) {
+    if (!this.cache.has(key)) return -1;
+
+    // If key exists, move it to the end to mark it as recently used
+    const value = this.cache.get(key);
+    this.cache.delete(key);
+    this.cache.set(key, value);
+    return value;
+  }
+
+  put(key, value) {
+    if (this.cache.has(key)) {
+      // If key exists, delete it first (to update its position)
+      this.cache.delete(key);
+    } else if (this.cache.size >= this.capacity) {
+      // Remove the least recently used item (first item in Map)
+      const lruKey = this.cache.keys().next().value;
+      this.cache.delete(lruKey);
+    }
+
+    // Insert the key-value pair
+    this.cache.set(key, value);
+  }
+}
+
+// Example usage:
+const lru = new LRUCache(3);
+lru.put(1, 10);
+lru.put(2, 20);
+lru.put(3, 30);
+console.log(lru.get(1)); // 10
+lru.put(4, 40); // Removes key 2
+console.log(lru.get(2)); // -1 (key 2 was removed)
+```
