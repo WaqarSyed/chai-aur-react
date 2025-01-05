@@ -1844,3 +1844,20 @@ console.log(lru.get(1)); // 10
 lru.put(4, 40); // Removes key 2
 console.log(lru.get(2)); // -1 (key 2 was removed)
 ```
+
+## 16. Write a function to find two numbers in the array such that their sum equals the target.
+
+```javascript
+function twoSum(nums, target) {
+  const map = new Map();
+
+  for (let i = 0; i < nums.length; i++) {
+    let complement = target - nums[i];
+    if (map.has(complement)) return [nums[map.get(complement)], nums[i]];
+    map.set(nums[i], i);
+  }
+  return [];
+}
+
+console.log(twoSum([1, 2, 3, 4, 5, 6, 7, 8, 12], 9));
+```
