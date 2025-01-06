@@ -1861,3 +1861,28 @@ function twoSum(nums, target) {
 
 console.log(twoSum([1, 2, 3, 4, 5, 6, 7, 8, 12], 9));
 ```
+
+## 17. Explain the difference between call, apply and bind.
+
+- **call** : Invokes a function with a specified this value and arguments provided individually.
+
+```javascript
+function greet(greeting) {
+  console.log(`${greeting},${this.name}`);
+}
+const person = { name: "waqar" };
+greet.call(person, "hello");
+```
+
+- **apply** : Similar to call , but arguments are passed as an array.
+
+```javascript
+greet.apply(person, ["hello"]); // output : Hello, waqar
+```
+
+- **bind** : Returns a new function with this bound to specified object, without invoking it immediately.
+
+```javascript
+const boundGreet = greet.bind(person);
+boundGreet("hey"); // output: hey , waqar
+```
