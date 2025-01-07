@@ -1913,3 +1913,20 @@ boundGreet("hey"); // output: hey , waqar
 
   fetchData(); // output: Async Data
   ```
+
+## 19. What are closures and why are they useful?
+
+- A closure is function that remembers its lexical scope even when executed outside it.
+
+```javascript
+function counter() {
+  let count = 0;
+  return function () {
+    count++;
+    return count;
+  };
+}
+const increment = counter();
+console.log(increment()); // output : 1
+console.log(increment()); // output : 2
+```
