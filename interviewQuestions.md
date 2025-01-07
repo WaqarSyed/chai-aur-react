@@ -1886,3 +1886,30 @@ greet.apply(person, ["hello"]); // output : Hello, waqar
 const boundGreet = greet.bind(person);
 boundGreet("hey"); // output: hey , waqar
 ```
+
+## 18. How does Javascript handle asynchronous operations?
+
+- JavaScript uses **event loop** to handle asynchronous operations using constructs like:
+
+  - **Callbacks**
+
+  ```javascript
+  setTimeout(() => console.log("callback"), 1000);
+  ```
+
+  - **Promises**
+
+  ```javascript
+  new Promise((resolve) => resolve("Resolved").then(console.log));
+  ```
+
+  - **async/await**
+
+  ```javascript
+  async function fetchData() {
+    const data = await new Promise.resolve("Async Data");
+    console.log(data);
+  }
+
+  fetchData(); // output: Async Data
+  ```
