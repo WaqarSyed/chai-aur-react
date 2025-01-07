@@ -1930,3 +1930,32 @@ const increment = counter();
 console.log(increment()); // output : 1
 console.log(increment()); // output : 2
 ```
+
+## 20. What is the difference between debounce and throttle?
+
+- **Debounce**: Ensures a function runs only after specified time has elapsed since the last call.
+
+```javascript
+function debounce(func, delay) {
+  let timeout;
+  return (...args) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func(...args), delay);
+  };
+}
+```
+
+- **Throttle**: Ensures a function runs at most once in a specified time interval.
+
+```javascript
+function throttle(func, interval) {
+  let lastTime = 0;
+  return (...args) => {
+    const now = Date.now();
+    if (now - lastTime >= interval) {
+      lastTime = now;
+      func(...args);
+    }
+  };
+}
+```
