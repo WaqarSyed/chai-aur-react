@@ -1959,3 +1959,15 @@ function throttle(func, interval) {
   };
 }
 ```
+
+## 21. Explain the Event Delegation Pattern in JavaScript.
+
+- Event Delegation is a technique where a parent element handles events for its child elements.
+
+```javascript
+document.getElementById("parent").addEventListener("click", (e) => {
+  if (e.target.tagName === "BUTTON") {
+    console.log("Button clicked:", e.target.textContent);
+  }
+});
+```
