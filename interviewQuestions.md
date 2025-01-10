@@ -1971,3 +1971,22 @@ document.getElementById("parent").addEventListener("click", (e) => {
   }
 });
 ```
+
+## 22. What is the difference between shallow copy and deep copy?
+
+- **Shallow Copy**: Copies only the first level of an object.
+
+```javascript
+const obj = { a: 1, b: { c: 2 } };
+const shallowCopy = { ...obj };
+shallowCopy.b.c = 3;
+console.log(obj.b.c); // Output: 3
+```
+
+- **Deep Copy**: Recursively copies all levels.
+
+```javascript
+const deepCopy = JSON.parse(JSON.stringify(obj));
+deepCopy.b.c = 4;
+console.log(obj.b.c); // Output: 2
+```
