@@ -1990,3 +1990,14 @@ const deepCopy = JSON.parse(JSON.stringify(obj));
 deepCopy.b.c = 4;
 console.log(obj.b.c); // Output: 2
 ```
+
+## 23. How do you handle memory leaks in JavaScript?
+
+- **Unreleased References**: Remove event listeners when no longer needed.
+
+```javascript
+element.removeEventListener("click", handler);
+```
+
+- **Global Variables**: Avoid global variables to prevent unintentional references.
+- **Detached DOM Elements**: Ensure elements are properly removed from DOM.
