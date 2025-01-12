@@ -2001,3 +2001,5 @@ element.removeEventListener("click", handler);
 
 - **Global Variables**: Avoid global variables to prevent unintentional references.
 - **Detached DOM Elements**: Ensure elements are properly removed from DOM.
+
+Need some advance questions on JS.
