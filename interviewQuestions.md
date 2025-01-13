@@ -2003,3 +2003,6 @@ element.removeEventListener("click", handler);
 - **Detached DOM Elements**: Ensure elements are properly removed from DOM.
 
 Need some advance questions on JS.
+I'll be covering some quick tips onward.
+
+# Quick tips
