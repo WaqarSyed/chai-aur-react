@@ -2006,3 +2006,5 @@ Need some advance questions on JS.
 I'll be covering some quick tips onward.
 
 # Quick tips
+
+## 1. Beyond Console.log
