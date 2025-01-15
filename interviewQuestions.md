@@ -2008,3 +2008,27 @@ I'll be covering some quick tips onward.
 # Quick tips
 
 ## 1. Beyond Console.log
+
+### console.table()
+
+- Displays arrays and objects in table format
+- Automatically creates columns
+- Sortable in DevTools
+
+### console.time() & console.timeEnd()
+
+- Measure execution time
+- Perfect for performance testing
+- Can run multiple timers simultaneously
+
+### console.trace()
+
+- Shows the call stack
+- Great for understanding code flow
+- Helps debug complex applications
+
+### console.assert()
+
+- Only logs when condition is false
+- Perfect for debugging conditionals
+- Cleaner than if-statement logs
