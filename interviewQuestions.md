@@ -2082,3 +2082,23 @@ I'll be covering some quick tips onward.
 - Automatically restarts apps on crashes.
 - Scales apps with built-in cluster mode.
 - Monitors apps performance in real-time
+
+# 20 JavaScript Concepts
+
+## 1. Closures
+
+- A closure is a function that remembers its outer variables even after the outer function has finished executing.
+
+```javascript
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    return count;
+  };
+}
+
+const counter = outer();
+console.log(counter()); //1
+console.log(counter()); //2
+```
