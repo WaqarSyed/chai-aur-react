@@ -2102,3 +2102,17 @@ const counter = outer();
 console.log(counter()); //1
 console.log(counter()); //2
 ```
+
+## 2. Hoisting
+
+- In JavaScript , variable and function declarations are "hoisted" to the top of their scope.
+
+```javascript
+console.log(greet()); // Hello!
+function greet() {
+  return "Hello!";
+}
+
+console.log(num); // undefined
+var num = 5;
+```
