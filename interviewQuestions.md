@@ -2116,3 +2116,15 @@ function greet() {
 console.log(num); // undefined
 var num = 5;
 ```
+
+## 3. Event Loop & Callbacks
+
+- JavaScript is single-threaded, and the event loop allows asynchronous operations using callbacks.
+
+```javascript
+console.log("start");
+setTimeout(() => console.log("Async operation"), 1000);
+console.log("End");
+
+// output : Start, End , Async operation
+```
