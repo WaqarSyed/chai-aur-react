@@ -2143,3 +2143,17 @@ async function fetchData() {
 
 fetchData(); // output: Data
 ```
+
+## 5. Async/Await
+
+- Async/Await simplifies promise handling.
+
+```javascript
+async function fetchData() {
+  let data = await new Promise((resolve) =>
+    setTimeout(() => resolve("Data"), 1000)
+  );
+}
+
+fetchData(); // Output : Data
+```
