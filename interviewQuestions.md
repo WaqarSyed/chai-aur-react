@@ -2157,3 +2157,12 @@ async function fetchData() {
 
 fetchData(); // Output : Data
 ```
+
+## 6. Arrow Functions
+
+- Arrow functions provide a concise syntax and don't have their own this.
+
+```javascript
+const add = (a, b) => a + b;
+console.log(add(2, 3)); // 5
+```
