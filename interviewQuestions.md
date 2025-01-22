@@ -2166,3 +2166,15 @@ fetchData(); // Output : Data
 const add = (a, b) => a + b;
 console.log(add(2, 3)); // 5
 ```
+
+## 7. Destructuring
+
+- Destructuring allows you to unpack values from arrays or properties from objects.
+
+```javascript
+const person = { name: "Alice", age: 25 };
+const { name, age } = person;
+
+console.log(name); // Alice
+console.log(age); //25
+```
