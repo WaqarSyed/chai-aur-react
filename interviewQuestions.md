@@ -2178,3 +2178,18 @@ const { name, age } = person;
 console.log(name); // Alice
 console.log(age); //25
 ```
+
+## 8. Spread & Rest Operators
+
+- Spread ... expands elements, and Rest collects them into an array.
+
+```javascript
+
+const arr1 = [1,2,3];
+const arr2 = [...arr1, 4,5]; //Spread
+
+function sum(...nums){
+  return nums.reduce(a,b) => a+b;
+}
+console.log(sum(1,2,3,4)); // 10
+```
