@@ -2193,3 +2193,18 @@ function sum(...nums){
 }
 console.log(sum(1,2,3,4)); // 10
 ```
+
+## 9. Prototypes
+
+- Prototypes allow objects to inherit properties and methods.
+
+```javascript
+function car(name) {
+  this.name = name;
+}
+car.prototype.getName = function () {
+  return this.name;
+};
+const myCar = new car("Tesla");
+console.log(myCar.getName()); // Tesla
+```
