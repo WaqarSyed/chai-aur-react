@@ -2208,3 +2208,18 @@ car.prototype.getName = function () {
 const myCar = new car("Tesla");
 console.log(myCar.getName()); // Tesla
 ```
+
+## 10. This Keyword
+
+- this refers to the context in which a function is called.
+
+```javascript
+const person = {
+  name: "john",
+  sayName() {
+    console.log(this.name);
+  },
+};
+
+person.sayName();
+```
