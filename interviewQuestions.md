@@ -2241,3 +2241,16 @@ class Animal {
 const dog = new Animal("Dog");
 console.log(dog.speak()); // Dog makes a sound.
 ```
+
+## 12. Modules
+
+- Modules let you split your code across multiple files.
+
+```javascript
+//add.js
+export const add = (a, b) => a + b;
+
+// main.js
+import { add } from "./add.js";
+console.log(add(2, 3)); // 5
+```
