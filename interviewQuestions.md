@@ -2264,3 +2264,13 @@ const numbers = [1, 2, 3, 4];
 const doubled = numbers.map((n) => n * 2); // [2,4,6,8]
 const evens = numbers.filter((n) => n % 2 === 0); // [2,4]
 ```
+
+## 14. Reduce
+
+- reduce() accumulates values from an array.
+
+```javascript
+const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce((acc, num) => acc + num, 0);
+console.log(sum); // 10
+```
