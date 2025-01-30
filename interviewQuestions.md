@@ -2274,3 +2274,17 @@ const numbers = [1, 2, 3, 4];
 const sum = numbers.reduce((acc, num) => acc + num, 0);
 console.log(sum); // 10
 ```
+
+## 15. setTimeout & setInterval
+
+- setTimeout delays execution, while setInterval repeats it.
+
+```javascript
+setTimeout(() => console.log("After 1 second"), 1000);
+
+let count = 0;
+const intervalId = setInterval(() => {
+  console.log("Count: ", ++count);
+  if (count === 3) clearInterval(intervalId);
+}, 1000);
+```
