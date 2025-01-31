@@ -2288,3 +2288,12 @@ const intervalId = setInterval(() => {
   if (count === 3) clearInterval(intervalId);
 }, 1000);
 ```
+
+## 16. Template Literals
+
+- Template Literals allow multi-line strings and interpolation
+
+```javascript
+const name = "world";
+console.log(`Hello ${name}`); // Hello world
+```
