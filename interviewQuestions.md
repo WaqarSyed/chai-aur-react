@@ -2309,3 +2309,15 @@ if ("") {
   console.log("Falsy value");
 }
 ```
+
+## 18. Truthy & Falsy Values
+
+- Values like 0, "", null, undefined, NaN are falsy.
+
+```javascript
+if ("") {
+  console.log("This won't run");
+} else {
+  console.log("Falsy value");
+}
+```
