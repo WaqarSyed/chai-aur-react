@@ -2297,3 +2297,15 @@ const intervalId = setInterval(() => {
 const name = "world";
 console.log(`Hello ${name}`); // Hello world
 ```
+
+## 17. Type Coercion
+
+- JavaScript can implicitly convert types, sometimes unpredictably.
+
+```javascript
+if ("") {
+  console.log("This won't run");
+} else {
+  console.log("Falsy value");
+}
+```
