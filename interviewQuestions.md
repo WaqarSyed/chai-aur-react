@@ -2362,3 +2362,18 @@ if ("") {
     throttle(() => console.log("Scrolling"), 200)
   );
   ```
+
+## 20. Currying
+
+- Currying transforms a function with multiple arguments into series of functions with a single argument.
+
+```javascript
+function multiply(a) {
+  return function (b) {
+    return a * b;
+  };
+}
+
+const double = multiply(2);
+console.log(double(5));
+```
