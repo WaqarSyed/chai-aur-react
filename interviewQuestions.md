@@ -2377,3 +2377,24 @@ function multiply(a) {
 const double = multiply(2);
 console.log(double(5));
 ```
+
+# CSS Tips
+
+## Write CSS like a PRO.
+
+- It's always better to use :not in such cases
+
+```css
+// Bad practice
+.nav li {
+  border-right: 1px solid #666;
+}
+.nav li:last-child {
+  border-right: none;
+}
+
+//Good practice
+.nav li:not(:last-child) {
+  border-right: 1px solid #666;
+}
+```
