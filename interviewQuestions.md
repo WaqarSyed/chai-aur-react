@@ -2398,3 +2398,6 @@ console.log(double(5));
   border-right: 1px solid #666;
 }
 ```
+
+- Try using **transform** for animations
+  - If you change the "left" property of an absolute element, you will be utilizing the CPU to calculate. However, if you use transform, then it would be the GPU. **And the GPU as we all know is better to do graphics.**
