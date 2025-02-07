@@ -2400,4 +2400,40 @@ console.log(double(5));
 ```
 
 - Try using **transform** for animations
+
   - If you change the "left" property of an absolute element, you will be utilizing the CPU to calculate. However, if you use transform, then it would be the GPU. **And the GPU as we all know is better to do graphics.**
+
+- Always prefer using CSS variables for big apps.
+
+```CSS
+// Not recommended
+body{
+  background-color: #le90ff;
+}
+h2{
+  border-bottom: 2px solid #lef90ff;
+}
+.container{
+  color: le90ff;
+  background-color: #fff
+}
+
+
+// recommended way to use css variables for repeating values.
+
+:root{
+  --blue: #le90ff;
+  --white: #fff;
+}
+
+body{
+  background-color: var(--blue);
+}
+h2{
+  border-bottom: 2px solid var(--blue);
+}
+.container{
+  color: var(--blue);
+  background-color: var(--white)
+}
+```
