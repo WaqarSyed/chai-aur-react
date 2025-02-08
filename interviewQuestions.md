@@ -2437,3 +2437,5 @@ h2{
   background-color: var(--white)
 }
 ```
+
+- Try using shorthands for efficient code instead setting individually properties like padding and margin
