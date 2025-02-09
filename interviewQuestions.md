@@ -2439,3 +2439,6 @@ h2{
 ```
 
 - Try using shorthands for efficient code instead setting individually properties like padding and margin
+
+- Avoid using !important tag : The only way to override an important tag is to use another important tag. This starts to create a domino effect that rapidly turns into a Maintenance nightmare.
+- Only use !important when it's absolutely necessary.
