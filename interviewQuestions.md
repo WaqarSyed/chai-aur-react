@@ -2443,3 +2443,4 @@ h2{
 - Avoid using !important tag : The only way to override an important tag is to use another important tag. This starts to create a domino effect that rapidly turns into a Maintenance nightmare.
 - Only use !important when it's absolutely necessary.
 - Using REM, EM units instead of PX.
+- use DRY code
