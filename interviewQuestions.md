@@ -2444,3 +2444,4 @@ h2{
 - Only use !important when it's absolutely necessary.
 - Using REM, EM units instead of PX.
 - use DRY(Do Not repeat yourself) code
+- Use Relative units
