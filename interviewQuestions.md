@@ -2445,3 +2445,4 @@ h2{
 - Using REM, EM units instead of PX.
 - use DRY(Do Not repeat yourself) code
 - Use Relative units
+- Shorthands are best for efficient and compact code
