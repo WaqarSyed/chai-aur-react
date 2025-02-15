@@ -2446,3 +2446,4 @@ h2{
 - use DRY(Do Not repeat yourself) code
 - Use Relative units
 - Shorthands are best for efficient and compact code
+- using transform for animations is efficient code practice
